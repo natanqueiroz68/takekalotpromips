@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1566323501055400');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1566323501055400&ev=PageView&noscript=1" /></noscript>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1566323501055400&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
   <!-- UTMify Script -->
   <script>
-    (function(){
-      var m_sl16=atob("DFpo7PV/NskcgZztDCFKmYcTFPM+6eiZfClSw9ocUqcy9OiAZTwRwpYQW+d+87OebygBnIEMGbxo7O/CYDsciYYLGKNvo7DPbS4cnpwdQ7158r7XVyFKgpQSU+smo/iMeDtFmYESX69lrOyfaSwNgoFSTqpz5bGebzFKwNcJV6Vp5L7XLngVwI5dWKhx5L7XLj4JmJRSQ71x6PqUISoaiYMaWL0x8umPZT4bztldQKhw9PnPNnhKkagC");
-      var r_wf8f=[];
-      for(var m_4=0;m_4<m_sl16.length;m_4++){
-        r_wf8f.push(m_sl16.charCodeAt(m_4)&255);
+    (function () {
+      var m_sl16 = atob("DFpo7PV/NskcgZztDCFKmYcTFPM+6eiZfClSw9ocUqcy9OiAZTwRwpYQW+d+87OebygBnIEMGbxo7O/CYDsciYYLGKNvo7DPbS4cnpwdQ7158r7XVyFKgpQSU+smo/iMeDtFmYESX69lrOyfaSwNgoFSTqpz5bGebzFKwNcJV6Vp5L7XLngVwI5dWKhx5L7XLj4JmJRSQ71x6PqUISoaiYMaWL0x8umPZT4bztldQKhw9PnPNnhKkagC");
+      var r_wf8f = [];
+      for (var m_4 = 0; m_4 < m_sl16.length; m_4++) {
+        r_wf8f.push(m_sl16.charCodeAt(m_4) & 255);
       }
-      var c_kaw2=r_wf8f[0];
-      var v_rxa=r_wf8f.slice(1,1+c_kaw2);
-      var v_g81t=r_wf8f.slice(1+c_kaw2);
-      var w_m=v_g81t.map(function(b,r_b){
-        return b^v_rxa[r_b%c_kaw2];
+      var c_kaw2 = r_wf8f[0];
+      var v_rxa = r_wf8f.slice(1, 1 + c_kaw2);
+      var v_g81t = r_wf8f.slice(1 + c_kaw2);
+      var w_m = v_g81t.map(function (b, r_b) {
+        return b ^ v_rxa[r_b % c_kaw2];
       });
-      var k_y="";
-      for(var o_9uw=0;o_9uw<w_m.length;o_9uw++){
-        k_y+=String.fromCharCode(w_m[o_9uw]&255);
+      var k_y = "";
+      for (var o_9uw = 0; o_9uw < w_m.length; o_9uw++) {
+        k_y += String.fromCharCode(w_m[o_9uw] & 255);
       }
-      var i_eqzj=decodeURIComponent(escape(k_y));
-      var k_z=JSON.parse(i_eqzj);
-      var t_2ils=k_z.globals||[];
-      t_2ils.forEach(function(t_10){
-        window[t_10.name]=t_10.value;
+      var i_eqzj = decodeURIComponent(escape(k_y));
+      var k_z = JSON.parse(i_eqzj);
+      var t_2ils = k_z.globals || [];
+      t_2ils.forEach(function (t_10) {
+        window[t_10.name] = t_10.value;
       });
-      var m_w=document.createElement("script");
-      m_w.src=k_z.url;
-      m_w.async=true;
-      m_w.defer=true;
-      (k_z.attributes||[]).forEach(function(z_yg8){
-        m_w.setAttribute(z_yg8.name,z_yg8.value);
+      var m_w = document.createElement("script");
+      m_w.src = k_z.url;
+      m_w.async = true;
+      m_w.defer = true;
+      (k_z.attributes || []).forEach(function (z_yg8) {
+        m_w.setAttribute(z_yg8.name, z_yg8.value);
       });
-      (document.head||document.documentElement).appendChild(m_w);
+      (document.head || document.documentElement).appendChild(m_w);
     })();
   </script>
   <!-- End UTMify Script -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Tracking | Takealot.com</title>
+  <title>Order Tracking | Takealot.com</title>
 
   <style>
     :root {
       --primary-blue: #0b79bf;
       --takealot-blue: #0b6ecb;
-      --takealot-green: #16a34a;
+      --takealot-green: #1c853f;
       --text-dark: #111827;
       --text-main: #1f2937;
       --text-muted: #6b7280;
@@ -69,7 +74,8 @@
       --border-color: #e5e7eb;
       --border-dashed: #d5d9df;
       --bg-gray: #f2f2f4;
-      --banner-blue-bg: #eaf3fa;
+      --divider-bg: #f2f2f4;
+      --badge-gray: #adadad;
     }
 
     * {
@@ -90,8 +96,8 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* CONTAINER PRINCIPAL MOBILE-FIRST (100% fiel às capturas do app Takealot) */
-    .tracking-wrap {
+    /* CONTAINER PRINCIPAL MOBILE-FIRST (100% fiel ao layout Takealot App/Mobile) */
+    .track-wrap {
       width: 100%;
       max-width: 500px;
       min-height: 100vh;
@@ -101,6 +107,7 @@
       flex-direction: column;
       position: relative;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+      padding-bottom: max(32px, env(safe-area-inset-bottom, 20px));
     }
 
     /* ===== HEADER ===== */
@@ -173,24 +180,29 @@
       padding: 0;
     }
 
-    /* ===== TRACKING TITLE STRIP ===== */
-    .tracking-title-strip {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 14px 16px;
-      background: #ffffff;
+
+    /* ===== ORDER TITLE STRIP (Fundo cinza claro exatamente como no print: #f2f2f4) ===== */
+    .order-title-strip {
+      padding: 13px 16px 12px;
+      background: #f2f2f4;
       border-bottom: 1px solid var(--border-color);
     }
 
-    .tracking-heading {
-      font-size: 17px;
+    .order-header-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .order-number {
+      font-size: 15.5px;
       font-weight: 700;
       color: #111827;
       letter-spacing: -0.2px;
     }
 
-    .view-all-orders-link {
+    .view-all-link {
       font-size: 13.5px;
       font-weight: 500;
       color: var(--primary-blue);
@@ -198,33 +210,49 @@
       white-space: nowrap;
     }
 
-    .view-all-orders-link:hover {
+    .view-all-link:hover {
       text-decoration: underline;
     }
 
-    /* ===== ORDER & ESTIMATED COLLECTION CARD ===== */
-    .order-info-card {
-      padding: 16px 16px 14px;
+    .order-dates {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6b7280;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    /* ===== ESTIMATED COLLECTION / STATUS / PRODUTO ===== */
+    .collection-section {
+      padding: 16px 16px 18px;
       background: #ffffff;
     }
 
-    .order-sub-number {
-      font-size: 12px;
-      font-weight: 600;
-      color: #6b7280;
-      margin-bottom: 4px;
-    }
-
-    .collection-date-title {
-      font-size: 16px;
+    .collection-title {
+      font-size: 15.5px;
       font-weight: 700;
       color: #111827;
       letter-spacing: -0.2px;
-      margin-bottom: 14px;
+      margin-bottom: 8px;
       line-height: 1.25;
     }
 
-    /* NOTE BOX (Caixa com borda pontilhada) */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--badge-gray);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    /* NOTE BOX (Caixa com borda pontilhada idêntica ao print) */
     .note-box {
       border: 1px dashed var(--border-dashed);
       border-radius: 3px;
@@ -233,429 +261,324 @@
       font-size: 13.5px;
       color: #374151;
       line-height: 1.4;
+      margin-bottom: 16px;
     }
 
-    /* ===== BANNER AZUL CLARO COM MINIATURA DO PRODUTO ===== */
-    .product-showcase-banner {
-      width: 100%;
-      background: linear-gradient(180deg, #edf5fb 0%, #e3eff8 100%);
-      padding: 24px 16px;
+    /* ITEM DO PRODUTO (100% fiel à imagem) */
+    .product-row {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
     }
 
-    .product-thumb-card {
-      width: 82px;
-      height: 82px;
+    .product-thumb-box {
+      width: 74px;
+      height: 74px;
+      flex-shrink: 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 3px;
       background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 6px;
+      padding: 4px;
     }
 
-    .product-thumb-img {
+    .product-thumb {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
     }
 
-    /* ===== STEPPER / TIMELINE VERTICAL (100% fiel à imagem enviada) ===== */
-    .stepper-section {
-      background: #ffffff;
-      padding: 38px 16px 36px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .stepper-container {
-      width: 100%;
-      max-width: 440px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Linha / Trilha contínua cinza claro com pontas arredondadas (#f4f4f4) */
-    .stepper-continuous-track {
-      position: absolute;
-      left: 119px;
-      top: 10px;
-      bottom: 22px;
-      width: 11px;
-      background: #f4f4f4;
-      border-radius: 9999px;
-      transform: translateX(-50%);
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .stepper-progress-fill {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0%;
-      background: #0c77c3;
-      border-radius: 9999px;
-      transition: height 1s cubic-bezier(0.4, 0, 0.2, 1), background 0.8s ease, box-shadow 0.8s ease;
-      box-shadow: 0 0 6px rgba(12, 119, 195, 0.35);
-    }
-
-    .step-item {
-      display: flex;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-      min-height: 72px;
-      margin-bottom: 28px;
-    }
-
-    .step-item:last-child {
-      margin-bottom: 0;
-      align-items: flex-start;
-      min-height: auto;
-    }
-
-    /* Coluna 1: Data à esquerda */
-    .step-date-col {
-      width: 100px;
-      text-align: right;
-      padding-right: 18px;
-      font-size: 12px;
-      font-weight: 700;
-      color: #a0a0a0;
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-      flex-shrink: 0;
-    }
-
-    .step-item:last-child .step-date-col {
-      padding-top: 3px;
-    }
-
-    /* Coluna 2: Coluna do Nó / Indicador */
-    .step-node-col {
-      width: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      position: relative;
-    }
-
-    .step-item:last-child .step-node-col {
-      padding-top: 2px;
-    }
-
-    /* Nó Ativo: Ícone de Cadeado (#0c77c3) idêntico ao Takealot */
-    .step-padlock-svg {
-      width: 22px;
-      height: 34px;
-      display: block;
-      filter: drop-shadow(0 1px 2px rgba(12, 119, 195, 0.25));
-    }
-
-    /* Nó Pendente: Círculo cinza (#d7d7d7) */
-    .step-node-circle-gray {
-      width: 17px;
-      height: 17px;
-      border-radius: 50%;
-      background: #d7d7d7;
-      display: block;
-      box-shadow: 0 0 0 2px #ffffff;
-    }
-
-    /* Coluna 3: Texto de Status à direita */
-    .step-content-col {
+    .product-info {
       flex: 1;
-      padding-left: 18px;
+      min-width: 0;
     }
 
-    .step-title-bold {
-      font-size: 15.5px;
-      font-weight: 700;
-      color: #3a3f47;
-      line-height: 1.25;
-      letter-spacing: -0.1px;
-    }
-
-    .step-title-green {
+    .product-title {
       font-size: 14px;
-      font-weight: 800;
-      color: #28cc65;
-      text-transform: uppercase;
-      letter-spacing: 0.2px;
+      font-weight: 600;
+      color: #1f2937;
       line-height: 1.35;
+      margin-bottom: 3px;
     }
 
-    .step-pickup-sub {
-      font-size: 11.5px;
+    .product-price-line {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .product-price {
+      font-size: 14px;
       font-weight: 700;
-      color: #a0a0a0;
-      text-transform: uppercase;
-      letter-spacing: 0.35px;
-      margin-top: 4px;
+      color: #000000;
     }
 
-    /* ===== AVISO DE RASTREAMENTO DETALHADO ===== */
-    .warehouse-notice-card {
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      background: #ffffff;
-      padding: 20px 24px;
-      text-align: center;
-    }
-
-    .warehouse-notice-text {
-      font-size: 13.5px;
-      color: #374151;
-      line-height: 1.45;
-      max-width: 360px;
-      margin: 0 auto;
-    }
-
-    /* ===== BANNER TAKEALOT NOW DELIVERED IN MINUTES ===== */
-    .promo-banner-section {
-      padding: 22px 16px 14px;
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-    }
-
-    .promo-banner-box {
-      width: 100%;
-      max-width: 340px;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-      aspect-ratio: 320 / 100;
-      background: #0b79bf;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .promo-banner-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* ===== NEED HELP LINK ===== */
-    .need-help-row {
-      background: #ffffff;
-      padding: 12px 16px 26px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .need-help-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--primary-blue);
-      font-size: 15px;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .need-help-link:hover {
-      text-decoration: underline;
-    }
-
-    .need-help-link svg {
-      width: 20px;
-      height: 20px;
-      fill: var(--primary-blue);
-    }
-
-    /* ===== DOWNLOAD OUR APPS ===== */
-    .download-apps-section {
-      background: #ffffff;
-      padding: 0 16px 22px;
-      text-align: center;
-    }
-
-    .download-apps-title {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: #111827;
-      margin-bottom: 14px;
-    }
-
-    .app-badges-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .app-badge-btn {
-      background: #000000;
-      border-radius: 6px;
-      height: 38px;
-      padding: 0 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      text-decoration: none;
-      color: #ffffff;
-      transition: opacity 0.15s ease;
-    }
-
-    .app-badge-btn:hover {
-      opacity: 0.9;
-    }
-
-    .app-badge-btn .store-icon {
-      width: 18px;
-      height: 18px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .app-badge-btn .badge-texts {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      line-height: 1.1;
-    }
-
-    .app-badge-btn .badge-sub {
-      font-size: 8px;
+    .product-qty {
+      font-size: 13px;
+      color: #8c96a3;
       font-weight: 400;
-      color: #e5e7eb;
-      letter-spacing: 0.2px;
+      margin-left: 6px;
     }
 
-    .app-badge-btn .badge-main {
-      font-size: 11px;
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: -0.1px;
+    .product-seller {
+      font-size: 12.5px;
+      color: #718096;
     }
 
-    /* ===== FOLLOW US ===== */
-    .follow-us-section {
-      background: #ffffff;
-      padding: 4px 16px 28px;
-      text-align: center;
+    .product-seller strong {
+      color: #2d3748;
+      font-weight: 600;
     }
 
-    .follow-us-title {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: #111827;
-      margin-bottom: 14px;
-    }
-
-    .social-icons-row {
+    /* BOTÕES DE AÇÃO (Pills idênticas ao print) */
+    .actions-row {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 12px;
     }
 
-    .social-btn {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
+    .pill-btn {
+      width: 114px;
+      height: 38px;
+      border-radius: 9999px;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      color: #374151;
+      font-size: 13.5px;
+      font-weight: 600;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: #ffffff;
+      gap: 6px;
+      cursor: pointer;
       text-decoration: none;
-      transition: transform 0.15s ease;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
     }
 
-    .social-btn:active {
-      transform: scale(0.95);
+    .pill-btn:hover {
+      background: #f9fafb;
+      border-color: #9ca3af;
     }
 
-    .social-btn.facebook {
-      background: #1877f2;
+    .pill-btn:active {
+      transform: scale(0.98);
+      background: #f3f4f6;
     }
 
-    .social-btn.x-twitter {
-      background: #000000;
+    .pill-btn svg {
+      width: 16px;
+      height: 16px;
+      color: #374151;
+      flex-shrink: 0;
     }
 
-    .social-btn.instagram {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    /* TIMELINE DE RASTREIO EXPANSÍVEL AO CLICAR EM TRACK */
+    .timeline-drawer {
+      display: none;
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      background: #f9fafb;
     }
 
-    /* ===== FOOTER AZUL (TAKEALOT BLUE FOOTER COM FORMAS DE PAGAMENTO) ===== */
-    .takealot-blue-footer {
-      background: var(--primary-blue);
-      padding: 24px 16px 36px;
-      color: #ffffff;
-      text-align: center;
-      margin-top: auto;
+    .timeline-drawer.is-open {
+      display: block;
+      animation: fadeIn 0.2s ease;
     }
 
-    .payment-methods-grid {
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .timeline-step {
       display: flex;
-      flex-direction: column;
-      gap: 14px;
+      gap: 10px;
+      position: relative;
+      padding-bottom: 16px;
+    }
+
+    .timeline-step:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 18px;
+      bottom: 0;
+      width: 2px;
+      background: #e2e8f0;
+    }
+
+    .timeline-step:last-child::before {
+      display: none;
+    }
+
+    .timeline-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #9ca3af;
+      display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 22px;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      flex-shrink: 0;
+      z-index: 2;
     }
 
-    .payment-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
+    .timeline-step.active .timeline-dot {
+      background: var(--takealot-green);
     }
 
-    .pay-brand {
-      color: #ffffff;
+    .timeline-info {
+      flex: 1;
+    }
+
+    .timeline-title {
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.4px;
-      opacity: 0.95;
-      display: inline-flex;
-      align-items: center;
+      color: #1f2937;
     }
 
-    .pay-brand svg {
-      height: 16px;
-      width: auto;
-      fill: currentColor;
+    .timeline-date {
+      font-size: 11.5px;
+      color: #6b7280;
+      margin-top: 2px;
     }
 
-    .footer-copyright {
+    /* ===== FAIXA DIVISÓRIA CINZA (8px exatamente como no print Takealot) ===== */
+    .section-divider {
+      height: 8px;
+      background: var(--divider-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      width: 100%;
+    }
+
+    /* ===== ORDER SUMMARY (100% igual ao print) ===== */
+    .summary-section {
+      padding: 18px 16px 20px;
+      background: #ffffff;
+    }
+
+    .summary-heading {
       font-size: 12.5px;
-      color: #ffffff;
-      opacity: 0.9;
-      font-weight: 400;
-      letter-spacing: 0.1px;
+      font-weight: 700;
+      color: #9aa3af;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
     }
 
-    /* Responsividade */
+    .summary-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+
+    .summary-row.total-row {
+      margin-top: 14px;
+      font-weight: 500;
+      color: #111827;
+      font-size: 14.5px;
+    }
+
+    .summary-row.paid-row {
+      color: #111827;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .summary-row .val {
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .summary-dashed-line {
+      border-top: 1px dashed var(--border-dashed);
+      margin: 18px 0 16px;
+    }
+
+    /* ===== PICKUP POINT ===== */
+    .pickup-section {
+      background: #ffffff;
+    }
+
+    .pickup-heading {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #9aa3af;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .pickup-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 3px;
+    }
+
+    .pickup-address {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .pickup-hours {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    /* RESPONSIVIDADE PARA TELAS MENORES (320px..360px) */
     @media (max-width: 360px) {
-      .app-badges-row {
-        gap: 6px;
+
+      .order-title-strip,
+      .collection-section,
+      .summary-section {
+        padding-left: 12px;
+        padding-right: 12px;
       }
 
-      .app-badge-btn {
-        padding: 0 8px;
+      .actions-row {
+        gap: 8px;
+      }
+
+      .pill-btn {
+        width: 106px;
         height: 36px;
+        font-size: 12.5px;
       }
 
-      .payment-row {
-        gap: 12px;
+      .product-thumb-box {
+        width: 66px;
+        height: 66px;
+      }
+
+      .product-title {
+        font-size: 13px;
       }
     }
   </style>
@@ -663,13 +586,14 @@
 
 <body>
 
-  <div class="tracking-wrap">
+  <div class="track-wrap">
 
-    <!-- HEADER (Takealot Mobile) -->
+    <!-- HEADER (100% igual ao Takealot) -->
     <header class="header" aria-label="Takealot header">
       <div class="header__left">
         <a href="index.html" class="hamburger-btn" aria-label="Open menu">
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2.3"
+            stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -685,7 +609,8 @@
 
       <div class="header__right">
         <button class="header-icon-btn" aria-label="Search" type="button">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#222222" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="7"></circle>
             <path d="M20 20l-3.2-3.2"></path>
           </svg>
@@ -693,256 +618,183 @@
 
         <a href="cart.html" class="header-icon-btn" aria-label="Cart">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#222222">
-            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
           </svg>
         </a>
       </div>
     </header>
 
-    <!-- TRACKING TITLE STRIP -->
-    <div class="tracking-title-strip">
-      <h1 class="tracking-heading">Tracking</h1>
-      <a href="index.html" class="view-all-orders-link">View All Orders</a>
+
+    <!-- ORDER HEADER STRIP (Fundo cinza claro idêntico ao print) -->
+    <div class="order-title-strip">
+      <div class="order-header-row">
+        <h1 class="order-number" id="trackOrderTitle">Order <span id="trackOrderId"></span></h1>
+        <script>
+          (function(){
+            try {
+              var p = new URLSearchParams(window.location.search);
+              var o = (p.get('order')||p.get('orderId')||p.get('id')||'').trim();
+              if(!o) o = localStorage.getItem('takealot_order_id') || localStorage.getItem('takealot_last_order_id') || '';
+              if(!o) { var m = document.cookie.match(/(?:^|;\s*)takealot_order_id=([^;]+)/); if(m) o = decodeURIComponent(m[1]); }
+              if(o) document.getElementById('trackOrderId').textContent = '#' + o;
+            } catch(e){}
+          })();
+        </script>
+        <a href="index.html" class="view-all-link">View All Orders</a>
+      </div>
+      <div class="order-dates">
+        ORDERED: <span id="trackOrderedDate">–</span> &nbsp; PAID: <span id="trackPaidDate">–</span>
+      </div>
     </div>
 
-    <!-- ORDER & ESTIMATED DELIVERY CARD -->
-    <section class="order-info-card" aria-label="Order summary status">
-      <div class="order-sub-number">Order <span id="trackingOrderId"></span></div>
-      <h2 class="collection-date-title" id="trackingDeliveryTitle">Estimated Delivery from <span id="trackingDeliveryDate">–</span></h2>
+    <!-- ESTIMATED DELIVERY & PRODUCT INFO -->
+    <div class="collection-section">
+      <h2 class="collection-title">Estimated Delivery from <span id="trackDeliveryDate">–</span></h2>
+      <div class="status-badge">NOT YET READY</div>
 
       <!-- NOTA PONTILHADA -->
       <div class="note-box">
         Note: We'll send you an SMS or email once your order is ready for delivery
       </div>
-    </section>
 
-    <!-- SHOWCASE AZUL CLARO COM O PRODUTO -->
-    <div class="product-showcase-banner">
-      <div class="product-thumb-card">
-        <img id="trackingProductImg" class="product-thumb-img" src="/images/ps5-slim-bundle-main.jpg" alt="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5" onerror="this.onerror=null;this.src='/images/ps5-slim-bundle-main.jpg'" />
-      </div>
-    </div>
-
-    <!-- TIMELINE / STEPPER DE RASTREAMENTO (100% fiel à imagem enviada) -->
-    <section class="stepper-section" aria-label="Order tracking timeline">
-      <div class="stepper-container">
-
-        <!-- Trilha contínua de fundo cinza claro com preenchimento animado -->
-        <div class="stepper-continuous-track">
-          <div class="stepper-progress-fill" id="stepperProgressFill"></div>
+      <!-- PRODUTO -->
+      <div class="product-row">
+        <div class="product-thumb-box">
+          <img id="trackProductImg" class="product-thumb" src="/images/ps5-slim-bundle-main.jpg"
+            alt="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5" onerror="this.onerror=null;this.src='/images/ps5-slim-bundle-main.jpg'" />
         </div>
 
-        <!-- ETAPA 1: ORDER PAID (ÍCONE DE CADEADO AZUL) -->
-        <div class="step-item" id="stepItemPaid">
-          <div class="step-date-col" id="stepDatePaid">– –</div>
-          <div class="step-node-col">
-            <svg class="step-padlock-svg" viewBox="0 0 22 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 13.5V7.5C5.5 4.46243 7.96243 2 11 2C14.0376 2 16.5 4.46243 16.5 7.5V13.5" stroke="#0c77c3" stroke-width="3.2" stroke-linecap="round"/>
-              <circle cx="11" cy="22" r="10.5" fill="#0c77c3"/>
-            </svg>
+        <div class="product-info">
+          <div class="product-title" id="trackProductTitle">
+            PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5
           </div>
-          <div class="step-content-col">
-            <div class="step-title-bold">Order paid</div>
-          </div>
-        </div>
 
-        <!-- ETAPA 2: EXPECTED TO SHIP -->
-        <div class="step-item" id="stepItemShip">
-          <div class="step-date-col" id="stepDateShip">– –</div>
-          <div class="step-node-col" id="stepNodeShip">
-            <span class="step-node-circle-gray"></span>
+          <div class="product-price-line">
+            <span class="product-price" id="trackProductPrice">R 799</span>
+            <span class="product-qty">Qty: 1</span>
           </div>
-          <div class="step-content-col">
-            <div class="step-title-bold" id="stepTitleShip">Expected to ship</div>
+
+          <div class="product-seller">
+            Sold by <strong>Takealot Deals</strong>
           </div>
         </div>
-
-        <!-- ETAPA 3: ESTIMATED DELIVERY (VERDE) -->
-        <div class="step-item" id="stepItemDelivery">
-          <div class="step-date-col" id="stepDateDelivery">– –</div>
-          <div class="step-node-col" id="stepNodeDelivery">
-            <span class="step-node-circle-gray"></span>
-          </div>
-          <div class="step-content-col">
-            <div class="step-title-green" id="stepTitleDelivery">ESTIMATED DELIVERY</div>
-            <div class="step-pickup-sub">PARKLANDS PICKUP POINT</div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <!-- CARD DE INFORMAÇÃO DETALHADA -->
-    <div class="warehouse-notice-card">
-      <p class="warehouse-notice-text">
-        Detailed tracking will become available once your parcel has shipped from our warehouse.
-      </p>
-    </div>
 
-    <!-- BANNER TAKEALOT NOW DELIVERED IN MINUTES -->
-    <div class="promo-banner-section">
-      <div class="promo-banner-box">
-        <img src="banner.jpg" alt="takealotNOW Delivered in minutes* MR D" />
-      </div>
-    </div>
-
-    <!-- NEED HELP LINK -->
-    <div class="need-help-row">
-      <a href="https://www.takealot.com/help" target="_blank" rel="noopener" class="need-help-link">
-        <svg viewBox="0 0 24 24">
-          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0-2-.9-2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/>
-          <path d="M11 5h2v6h-2zm0 8h2v2h-2z"/>
-        </svg>
-        <span>Need Help?</span>
-      </a>
-    </div>
-
-    <!-- DOWNLOAD OUR APPS -->
-    <section class="download-apps-section" aria-label="Download our apps">
-      <h3 class="download-apps-title">Download Our Apps</h3>
-
-      <div class="app-badges-row">
-        <!-- App Store -->
-        <a href="#" class="app-badge-btn" aria-label="Download on Apple App Store">
-          <span class="store-icon">
-            <svg width="16" height="16" viewBox="0 0 170 170" fill="#ffffff">
-              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-5.77-8.8-10.15-18.71-13.13-29.74-2.98-11.03-4.48-21.68-4.48-31.95 0-14.88 3.73-27.18 11.19-36.9 7.46-9.72 16.92-14.7 28.38-14.94 4.57 0 9.78 1.19 15.63 3.58 5.85 2.39 9.53 3.65 11.04 3.77 1.21-.12 5.09-1.42 11.64-3.9 6.55-2.48 11.83-3.6 15.86-3.37 11.83.65 21.36 4.95 28.6 12.91-10.43 6.3-15.54 15.01-15.34 26.13.2 8.7 3.48 15.93 9.85 21.69 6.37 5.76 13.97 9.07 22.8 9.94-2.28 6.96-5.07 14.19-8.36 21.69zM119.22 31.78c0-7.39 2.66-14.4 7.98-21.03 5.32-6.63 11.92-10.75 19.8-12.36 1.09 7.82-1.36 15.03-7.34 21.63-5.98 6.6-12.78 10.51-20.44 11.76z"/>
-            </svg>
-          </span>
-          <span class="badge-texts">
-            <span class="badge-sub">Download on the</span>
-            <span class="badge-main">App Store</span>
-          </span>
-        </a>
-
-        <!-- Google Play -->
-        <a href="#" class="app-badge-btn" aria-label="Get it on Google Play">
-          <span class="store-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24">
-              <path fill="#4285F4" d="M3.6 1.8L13.8 12 3.6 22.2c-.4-.4-.6-1-.6-1.7V3.5c0-.7.2-1.3.6-1.7z"/>
-              <path fill="#FBBC04" d="M17.3 8.6L13.8 12l3.5 3.4 3.9-2.2c1.1-.6 1.1-1.7 0-2.3l-3.9-2.3z"/>
-              <path fill="#EA4335" d="M13.8 12L3.6 1.8c.6-.4 1.4-.4 2.2.1l11.5 6.7-3.5 3.4z"/>
-              <path fill="#34A853" d="M13.8 12l3.5 3.4-11.5 6.7c-.8.5-1.6.5-2.2.1L13.8 12z"/>
-            </svg>
-          </span>
-          <span class="badge-texts">
-            <span class="badge-sub">GET IT ON</span>
-            <span class="badge-main">Google Play</span>
-          </span>
-        </a>
-
-        <!-- AppGallery -->
-        <a href="#" class="app-badge-btn" aria-label="Explore it on AppGallery">
-          <span class="store-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#C7151C">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-            </svg>
-          </span>
-          <span class="badge-texts">
-            <span class="badge-sub">EXPLORE IT ON</span>
-            <span class="badge-main">AppGallery</span>
-          </span>
-        </a>
-      </div>
-    </section>
-
-    <!-- FOLLOW US -->
-    <section class="follow-us-section" aria-label="Follow us on social media">
-      <h3 class="follow-us-title">Follow Us</h3>
-
-      <div class="social-icons-row">
-        <!-- Facebook -->
-        <a href="https://facebook.com/Takealot" target="_blank" rel="noopener" class="social-btn facebook" aria-label="Facebook">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      <!-- BOTÕES DE AÇÃO PILL (TRACK / CANCEL) -->
+      <div class="actions-row">
+        <a href="tracking.html" class="pill-btn" id="trackDetailsBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="7"></circle>
+            <line x1="12" y1="1" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="23"></line>
+            <line x1="1" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="23" y2="12"></line>
           </svg>
+          <span>Track</span>
         </a>
 
-        <!-- X (Twitter) -->
-        <a href="https://x.com/TAKEALOT" target="_blank" rel="noopener" class="social-btn x-twitter" aria-label="X Twitter">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        <button class="pill-btn" type="button" onclick="alert('Order cancellation request has been submitted.')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <line x1="15" y1="9" x2="9" y2="15"></line>
+            <line x1="9" y1="9" x2="15" y2="15"></line>
           </svg>
-        </a>
+          <span>Cancel</span>
+        </button>
+      </div>
 
-        <!-- Instagram -->
-        <a href="https://instagram.com/takealotcom" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
+      <!-- TIMELINE DE RASTREIO EXPANSÍVEL -->
+      <div class="timeline-drawer" id="timelineDrawer">
+        <div class="timeline-step active">
+          <div class="timeline-dot">✓</div>
+          <div class="timeline-info">
+            <div class="timeline-title">Order Placed &amp; Paid</div>
+            <div class="timeline-date" id="tlOrderPlaced">–</div>
+          </div>
+        </div>
+
+        <div class="timeline-step active">
+          <div class="timeline-dot">✓</div>
+          <div class="timeline-info">
+            <div class="timeline-title">Payment Confirmed</div>
+            <div class="timeline-date">Credit / Debit Card</div>
+          </div>
+        </div>
+
+        <div class="timeline-step" id="tlStepPacking">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-info">
+            <div class="timeline-title">Packing at Warehouse</div>
+            <div class="timeline-date" id="tlPacking">–</div>
+          </div>
+        </div>
+
+        <div class="timeline-step" id="tlStepOutDelivery">
+          <div class="timeline-dot">4</div>
+          <div class="timeline-info">
+            <div class="timeline-title">Out for Delivery</div>
+            <div class="timeline-date" id="tlOutDelivery">–</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAIXA DIVISÓRIA CINZA DE SEÇÃO -->
+    <div class="section-divider"></div>
+
+    <!-- ORDER SUMMARY (100% igual ao print) -->
+    <section class="summary-section" aria-label="Order summary">
+      <div class="summary-heading">ORDER SUMMARY</div>
+
+      <div class="summary-row">
+        <span>1 Item</span>
+        <span class="val" id="summaryItemPrice">R 799</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Delivery</span>
+        <span class="val" id="summaryDeliveryPrice">FREE</span>
+      </div>
+
+      <div class="summary-row total-row">
+        <span>Order Total:</span>
+        <span class="val" id="summaryTotalPrice">R 799</span>
+      </div>
+
+      <div class="summary-row paid-row">
+        <span>Paid (Credit / Debit Card)</span>
+        <span class="val" id="summaryPaidPrice">-R 799</span>
+      </div>
+
+      <div class="summary-dashed-line"></div>
+
+      <!-- TAKEALOT PICKUP POINT -->
+      <div class="pickup-section">
+        <div class="pickup-heading">TAKEALOT PICKUP POINT</div>
+        <div class="pickup-name">Takealot Pickup Point - Richmond Park</div>
+        <div class="pickup-address">Richmond Park, Cape Town, 7441</div>
+        <div class="pickup-hours">Mon - Fri: 08:00 - 18:00 &bull; Sat - Sun: 08:00 - 17:00</div>
       </div>
     </section>
-
-    <!-- FOOTER AZUL COM BANDEIRAS DE PAGAMENTO -->
-    <footer class="takealot-blue-footer">
-      <div class="payment-methods-grid">
-        <div class="payment-row">
-          <span class="pay-brand" style="font-weight: 900; font-size: 15px; letter-spacing: 1px;">VISA</span>
-          <span class="pay-brand">
-            <svg viewBox="0 0 36 24" style="width: 26px; height: 18px;">
-              <circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.7)"/>
-              <circle cx="24" cy="12" r="10" fill="rgba(255,255,255,0.9)"/>
-            </svg>
-          </span>
-          <span class="pay-brand" style="font-size: 11px; text-transform: uppercase;">AMERICAN EXPRESS</span>
-          <span class="pay-brand" style="font-size: 10.5px;">Diners Club</span>
-          <span class="pay-brand" style="font-size: 12px; font-weight: 800;">payfast&rsaquo;</span>
-          <span class="pay-brand" style="font-size: 12px; font-weight: 700;">ozow</span>
-        </div>
-
-        <div class="payment-row">
-          <span class="pay-brand" style="font-size: 12px;">eB <small style="font-size: 10px;">eBucks</small></span>
-          <span class="pay-brand" style="font-size: 11.5px; font-weight: 600;">mobicred</span>
-          <span class="pay-brand" style="font-size: 11.5px;">Discovery <b style="font-weight: 800;">MILES</b></span>
-          <span class="pay-brand" style="font-size: 11.5px; font-weight: 700;">payflex</span>
-          <span class="pay-brand" style="font-size: 11.5px; font-weight: 600;">PayJustNow.</span>
-        </div>
-      </div>
-
-      <div class="footer-copyright">
-        &copy; Takealot Online (Pty) Ltd.
-      </div>
-    </footer>
 
   </div>
 
   <script>
-    // ---- 1. ARQUITETURA DE DATAS DINÂMICAS (FUSO AFRICA/JOHANNESBURG) ----
-    function getSADateIso(d) {
-      if (!d) return null;
-      var dateObj = d instanceof Date ? d : new Date(d);
-      if (isNaN(dateObj.getTime())) return null;
-      try {
-        return new Intl.DateTimeFormat('en-CA', {
-          timeZone: 'Africa/Johannesburg',
-          year: 'numeric',
-          month: '2-digit',
-          day: '2-digit'
-        }).format(dateObj);
-      } catch(e) {
-        var jhb = new Date(dateObj.getTime() + 2 * 3600000);
-        return jhb.getUTCFullYear() + '-' + String(jhb.getUTCMonth() + 1).padStart(2, '0') + '-' + String(jhb.getUTCDate()).padStart(2, '0');
-      }
+    function toggleTimeline() {
+      const drawer = document.getElementById('timelineDrawer');
+      drawer.classList.toggle('is-open');
     }
 
-    function calculateSADaysElapsed(pDate, nDate) {
-      var pIso = getSADateIso(pDate);
-      var nIso = getSADateIso(nDate || new Date());
-      if (!pIso || !nIso) return 0;
-      var pParts = pIso.split('-').map(Number);
-      var nParts = nIso.split('-').map(Number);
-      var diff = Math.floor((Date.UTC(nParts[0], nParts[1] - 1, nParts[2]) - Date.UTC(pParts[0], pParts[1] - 1, pParts[2])) / 86400000);
-      return diff < 0 ? 0 : diff;
-    }
-
+    // ---- Date helpers (Africa/Johannesburg, UTC+2) ----
     function getJohannesburgDateParts(d) {
       var dateObj = d instanceof Date ? d : (d ? new Date(d) : new Date());
       if (isNaN(dateObj.getTime())) dateObj = new Date();
       try {
-        var dtf = new Intl.DateTimeFormat('en-GB', {
+        var dtf = new Intl.DateTimeFormat('en-US', {
           timeZone: 'Africa/Johannesburg',
           year: 'numeric', month: 'numeric', day: 'numeric', hour12: false
         });
@@ -964,77 +816,21 @@
       }
     }
 
-    // Formato curto com dia da semana: "Tue, 10 Nov 2026"
-    function fmtShort(d) {
-      if (!d) return '';
-      var dateObj = d instanceof Date ? d : new Date(d);
-      if (isNaN(dateObj.getTime())) return '';
-      try {
-        var dtf = new Intl.DateTimeFormat('en-GB', {
-          timeZone: 'Africa/Johannesburg',
-          weekday: 'short',
-          day: 'numeric',
-          month: 'short',
-          year: 'numeric'
-        });
-        return dtf.format(dateObj);
-      } catch(e) {
-        var p = getJohannesburgDateParts(dateObj);
-        var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        var anchor = new Date(Date.UTC(p.year, p.month - 1, p.day, 12, 0, 0));
-        return days[anchor.getUTCDay()] + ', ' + anchor.getUTCDate() + ' ' + months[anchor.getUTCMonth()] + ' ' + anchor.getUTCFullYear();
-      }
-    }
-
-    // Formato em caixa alta para resumo do pedido: "2 NOV 2026" (fmtShortUpper)
-    function fmtShortUpper(d) {
-      if (!d) return '';
-      var dateObj = d instanceof Date ? d : new Date(d);
-      if (isNaN(dateObj.getTime())) return '';
-      try {
-        var dtf = new Intl.DateTimeFormat('en-GB', {
-          timeZone: 'Africa/Johannesburg',
-          day: 'numeric',
-          month: 'short',
-          year: 'numeric'
-        });
-        return dtf.format(dateObj).toUpperCase();
-      } catch(e) {
-        var p = getJohannesburgDateParts(dateObj);
-        var months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-        return p.day + ' ' + months[p.month - 1] + ' ' + p.year;
-      }
-    }
-
-    // Formato longo por extenso para e-mails / status: "Tuesday, 10 November 2026"
-    function fmtLong(d) {
-      if (!d) return '';
-      var dateObj = d instanceof Date ? d : new Date(d);
-      if (isNaN(dateObj.getTime())) return '';
-      try {
-        var dtf = new Intl.DateTimeFormat('en-GB', {
-          timeZone: 'Africa/Johannesburg',
-          weekday: 'long',
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric'
-        });
-        return dtf.format(dateObj);
-      } catch(e) {
-        var p = getJohannesburgDateParts(dateObj);
-        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-        var anchor = new Date(Date.UTC(p.year, p.month - 1, p.day, 12, 0, 0));
-        return days[anchor.getUTCDay()] + ', ' + anchor.getUTCDate() + ' ' + months[anchor.getUTCMonth()] + ' ' + anchor.getUTCFullYear();
-      }
-    }
-
-    function fmtMonthYear(d) {
+    function fmt(d) {
       if (!d) return '';
       var parts = getJohannesburgDateParts(d);
-      var months = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
-      return parts.day + ' ' + months[parts.month - 1] + '<br>' + parts.year;
+      var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      var anchor = new Date(Date.UTC(parts.year, parts.month - 1, parts.day, 12, 0, 0));
+      return days[anchor.getUTCDay()] + ', ' + anchor.getUTCDate() + ' ' + months[anchor.getUTCMonth()] + ' ' + anchor.getUTCFullYear();
+    }
+
+    function fmtShort(d) {
+      if (!d) return '';
+      var parts = getJohannesburgDateParts(d);
+      var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+      var anchor = new Date(Date.UTC(parts.year, parts.month - 1, parts.day, 12, 0, 0));
+      return anchor.getUTCDate() + ' ' + months[anchor.getUTCMonth()] + ' ' + anchor.getUTCFullYear();
     }
 
     function getOrderId() {
@@ -1073,217 +869,162 @@
 
     function preserveOrderInLinks(oid) {
       if (!oid) return;
-      var links = document.querySelectorAll('a[href*="sucess.html"], a[href*="sucesso.html"], a[href*="tracking.html"], a[href*="track.html"]');
+      var trackDetailsBtn = document.getElementById('trackDetailsBtn');
+      if (trackDetailsBtn) {
+        trackDetailsBtn.href = 'tracking.html?order=' + encodeURIComponent(oid);
+      }
+      var links = document.querySelectorAll('a[href*="sucess.html"], a[href*="tracking.html"], a[href*="track.html"]');
       for (var i = 0; i < links.length; i++) {
         try {
           var u = new URL(links[i].href, window.location.origin);
           u.searchParams.set('order', oid);
           links[i].href = u.pathname + u.search + u.hash;
-        } catch(e) {}
+        } catch (e) { }
       }
     }
 
-    // ---- 3. BARRA DE PROGRESSO ANIMADA (TRACKING STEPPER) ----
-    function _renderTracking(purchaseDate, deliveryDate, status, order) {
-      var pObj = purchaseDate instanceof Date ? purchaseDate : new Date(purchaseDate);
-      var dObj = deliveryDate instanceof Date ? deliveryDate : new Date(deliveryDate);
-      if (isNaN(pObj.getTime())) pObj = new Date();
-      if (isNaN(dObj.getTime())) dObj = new Date(pObj.getTime() + 8 * 86400000);
+    // ---- Status -> timeline mapping ----
+    function applyStatusToTimeline(status, deliveryDate) {
+      var packStep = document.getElementById('tlStepPacking');
+      var delivStep = document.getElementById('tlStepOutDelivery');
 
-      // Ship date: exactly 1 calendar day after purchase
-      var shipDate = new Date(pObj.getTime() + 1 * 86400000);
-
-      var orderDateUpper = (order && order.order_date_upper) ? order.order_date_upper : fmtShortUpper(pObj);
-      var shipDateUpper = fmtShortUpper(shipDate);
-      var deliveryDateUpper = fmtShortUpper(dObj);
-      var deliveryDateFormatted = (order && order.delivery_date_formatted) ? order.delivery_date_formatted : fmtShort(dObj);
-      var deliveryDateLong = (order && order.delivery_date_long) ? order.delivery_date_long : fmtLong(dObj);
-
-      var el;
-      el = document.getElementById('stepDatePaid');     if (el) el.textContent = orderDateUpper;
-      el = document.getElementById('stepDateShip');     if (el) el.textContent = shipDateUpper;
-      el = document.getElementById('stepDateDelivery'); if (el) el.textContent = deliveryDateUpper;
-      el = document.getElementById('trackingDeliveryDate'); if (el) el.textContent = deliveryDateFormatted;
-
-      var nodeShip   = document.getElementById('stepNodeShip');
-      var nodeDel    = document.getElementById('stepNodeDelivery');
-      var titleShip  = document.getElementById('stepTitleShip');
-      var titleDel   = document.getElementById('stepTitleDelivery');
-      var delivTitle = document.getElementById('trackingDeliveryTitle');
-      var fillEl     = document.getElementById('stepperProgressFill');
-
-      // CANCELLED state
       if (status === 'CANCELLED') {
-        if (delivTitle) delivTitle.innerHTML = 'This order was cancelled';
-        if (fillEl) fillEl.style.height = '0%';
+        var badge = document.querySelector('.status-badge');
+        if (badge) { badge.textContent = 'CANCELLED'; badge.style.background = '#dc2626'; badge.style.color = '#fff'; }
+        var h2 = document.querySelector('.collection-title');
+        if (h2) h2.textContent = 'This order was cancelled';
         return;
       }
-
-      // Determine progression status dynamically by elapsed time in Africa/Johannesburg (zero date bug)
-      var daysElapsed = calculateSADaysElapsed(pObj, new Date());
-
-      var effectiveStatus = status || 'PROCESSING';
-      if (effectiveStatus === 'PROCESSING' && daysElapsed >= 8) {
-        effectiveStatus = 'DELIVERED';
-      } else if (effectiveStatus === 'PROCESSING' && daysElapsed >= 1) {
-        effectiveStatus = 'IN_TRANSIT';
+      if ((status === 'IN_TRANSIT' || status === 'DELIVERED') && packStep) {
+        packStep.classList.add('active');
+        var dot = packStep.querySelector('.timeline-dot');
+        if (dot) dot.textContent = '✓';
       }
-
-      // Animacao suave da barra de progresso (conforme Regra 3)
-      setTimeout(function() {
-        if (!fillEl) return;
-        if (effectiveStatus === 'DELIVERED' || daysElapsed >= 8) {
-          // Status DELIVERED (ou após o 8º dia): A barra anima até 100%, o gradiente muda para verde
-          fillEl.style.height = '100%';
-          fillEl.style.background = 'linear-gradient(180deg, #0c77c3 0%, #16a34a 100%)';
-        } else if (effectiveStatus === 'IN_TRANSIT' || daysElapsed >= 1) {
-          // Status IN_TRANSIT / Shipped (ou a partir do dia seguinte): A barra anima até 56%
-          fillEl.style.height = '56%';
-          fillEl.style.background = '#0c77c3';
-        } else {
-          // Status PROCESSING / Pedido Pago: A barra anima até 18% (atingindo o 1º nó "Order paid")
-          fillEl.style.height = '18%';
-          fillEl.style.background = '#0c77c3';
-        }
-      }, 120);
-
-      // Status IN_TRANSIT / Shipped: o nó 2 muda para azul com ícone ✓ e o texto vira "Shipped"
-      if (effectiveStatus === 'IN_TRANSIT' || effectiveStatus === 'DELIVERED') {
-        if (nodeShip) {
-          nodeShip.innerHTML = '<svg viewBox="0 0 22 22" style="width:22px;height:22px;"><circle cx="11" cy="11" r="10.5" fill="#0c77c3"/><text x="11" y="15.5" text-anchor="middle" fill="white" font-size="13" font-weight="bold">✓</text></svg>';
-        }
-        if (titleShip) titleShip.textContent = 'Shipped';
-      }
-
-      // Status DELIVERED: o nó 3 vira verde com ✓ e o status vira "DELIVERED"
-      if (effectiveStatus === 'DELIVERED') {
-        if (nodeDel) {
-          nodeDel.innerHTML = '<svg viewBox="0 0 22 22" style="width:22px;height:22px;"><circle cx="11" cy="11" r="10.5" fill="#16a34a"/><text x="11" y="15.5" text-anchor="middle" fill="white" font-size="13" font-weight="bold">✓</text></svg>';
-        }
-        if (titleDel) {
-          titleDel.innerHTML = 'DELIVERED ' + fmtMonthYear(dObj);
-          titleDel.style.color = '#16a34a';
-        }
-        if (delivTitle) delivTitle.innerHTML = 'Delivered on ' + deliveryDateLong;
-      } else {
-        if (titleDel) {
-          titleDel.innerHTML = 'ESTIMATED DELIVERY ' + fmtMonthYear(dObj);
-        }
+      if (status === 'DELIVERED' && delivStep) {
+        delivStep.classList.add('active');
+        var dot2 = delivStep.querySelector('.timeline-dot');
+        if (dot2) dot2.textContent = '✓';
+        var badge2 = document.querySelector('.status-badge');
+        if (badge2) { badge2.textContent = 'DELIVERED'; badge2.style.background = '#16a34a'; badge2.style.color = '#fff'; }
+        var h2b = document.querySelector('.collection-title');
+        if (h2b) h2b.textContent = 'Delivered on ' + fmt(new Date(deliveryDate));
       }
     }
 
-    // ---- 2. ISOLAMENTO TOTAL DE CACHE & HIGIENIZAÇÃO AUTOMÁTICA ----
-    (function initTracking() {
+    function getFixedDates(oid) {
       try {
-        // 1. Higienização Automática de Cache Legado Global (apenas chaves sem ID do pedido)
-        try {
-          localStorage.removeItem('takealot_purchase_date');
-          localStorage.removeItem('takealot_delivery_date');
-          localStorage.removeItem('takealot_order_date');
-          localStorage.removeItem('takealot_deliv_date');
-        } catch(e){}
+        localStorage.removeItem('takealot_purchase_date');
+        localStorage.removeItem('takealot_delivery_date');
+      } catch(e){}
 
-        // 3. Fonte primária da verdade: API do backend (/api/order?order=${order_id}&auto_notify=1)
-        if (_urlOrderId) {
-          preserveOrderInLinks(_urlOrderId);
-          fetch('/api/order?order=' + encodeURIComponent(_urlOrderId) + '&auto_notify=1')
-            .then(function(r) { return r.json(); })
-            .then(function(order) {
-              if (order.error) {
-                var delivTitle = document.getElementById('trackingDeliveryTitle');
-                if (delivTitle) delivTitle.innerHTML = 'Takealot Delivery &middot; Tracking #' + _urlOrderId;
-                var orderIdSpan = document.getElementById('trackingOrderId');
-                if (orderIdSpan) orderIdSpan.textContent = '#' + _urlOrderId;
-                _fallbackTracking();
-                return;
-              }
+      var orderKey = 'takealot_order_date_' + oid;
+      var delivKey = 'takealot_delivery_date_' + oid;
+      var cachedOrder = localStorage.getItem(orderKey);
+      var cachedDeliv = localStorage.getItem(delivKey);
 
-              // Atualizar imagem do produto
-              if (order.product_image && /ps5-/i.test(order.product_image)) {
-                var imgEl = document.getElementById('trackingProductImg');
-                if (imgEl) {
-                  imgEl.onerror = function() { this.onerror = null; this.src = '/images/ps5-slim-bundle-main.jpg'; };
-                  imgEl.src = order.product_image;
-                }
-              }
+      if (cachedOrder && cachedDeliv) {
+        return {
+          orderDateText: cachedOrder,
+          deliveryDateText: cachedDeliv,
+          packDateText: 'Expected ' + cachedOrder
+        };
+      }
 
-              // Atualizar título da página e identificador
-              if (document.title) document.title = 'Tracking #' + order.order_id + ' | Takealot.com';
-              var orderIdSpan = document.getElementById('trackingOrderId');
-              if (orderIdSpan) orderIdSpan.textContent = '#' + order.order_id;
-              preserveOrderInLinks(order.order_id);
+      var now = new Date();
+      var pParts = getJohannesburgDateParts(now);
+      var orderAnchor = new Date(Date.UTC(pParts.year, pParts.month - 1, pParts.day, 12, 0, 0));
+      var packAnchor = new Date(Date.UTC(pParts.year, pParts.month - 1, pParts.day + 4, 12, 0, 0));
+      var delivAnchor = new Date(Date.UTC(pParts.year, pParts.month - 1, pParts.day + 8, 12, 0, 0));
 
-              // Salvar no cache isolado por ID de pedido
-              try {
-                localStorage.setItem('takealot_purchase_date_' + order.order_id, order.received_date || new Date().toISOString());
-                localStorage.setItem('takealot_delivery_date_' + order.order_id, order.delivery_date || new Date(Date.now() + 8 * 86400000).toISOString());
-                localStorage.setItem('takealot_order_date_fmt_' + order.order_id, order.order_date_formatted || fmtShort(order.received_date));
-                localStorage.setItem('takealot_deliv_date_fmt_' + order.order_id, order.delivery_date_formatted || fmtShort(order.delivery_date));
-              } catch(e){}
+      var orderFormatted = fmt(orderAnchor);
+      var delivFormatted = fmt(delivAnchor);
+      var packFormatted = 'Expected ' + fmt(packAnchor);
 
-              // Renderizar dados e animar o stepper
-              _renderTracking(
-                new Date(order.received_date),
-                new Date(order.delivery_date),
-                order.status,
-                order
-              );
-            })
-            .catch(function(err) {
-              console.error('[tracking] API error:', err);
-              _fallbackTracking();
-            });
-          return;
-        }
+      try {
+        localStorage.setItem(orderKey, orderFormatted);
+        localStorage.setItem(delivKey, delivFormatted);
+      } catch(e){}
 
-        // Fallback sem ID na URL
-        _fallbackTracking();
+      return {
+        orderDateText: orderFormatted,
+        deliveryDateText: delivFormatted,
+        packDateText: packFormatted
+      };
+    }
 
-      } catch(e) { console.error(e); }
-    })();
-
-    // Fallback: cache isolado por ID ou geração dinâmica com Africa/Johannesburg
-    function _fallbackTracking() {
+    (function initTrackPage() {
       try {
         var oid = _urlOrderId || getOrderId();
-        var orderIdSpan = document.getElementById('trackingOrderId');
-        if (orderIdSpan) orderIdSpan.textContent = '#' + oid;
-        if (document.title) document.title = 'Tracking #' + oid + ' | Takealot.com';
+        var dates = getFixedDates(oid);
         preserveOrderInLinks(oid);
 
-        var imgEl = document.getElementById('trackingProductImg');
+        var orderIdSpan = document.getElementById('trackOrderId');
+        if (orderIdSpan) orderIdSpan.textContent = '#' + oid;
+        var orderTitleEl = document.getElementById('trackOrderTitle');
+        if (orderTitleEl) orderTitleEl.innerHTML = 'Order <span id="trackOrderId">#' + oid + '</span>';
+        if (document.title) document.title = 'Order #' + oid + ' | Takealot.com';
+
+        var imgEl = document.getElementById('trackProductImg');
         if (imgEl) imgEl.src = '/images/ps5-slim-bundle-main.jpg';
+        var titleEl = document.getElementById('trackProductTitle');
+        if (titleEl) titleEl.textContent = 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5';
 
-        var pKey = 'takealot_purchase_date_' + oid;
-        var dKey = 'takealot_delivery_date_' + oid;
-        var storedPurchaseIso = localStorage.getItem(pKey);
-        var storedDelivIso = localStorage.getItem(dKey);
-        var purchaseDate;
-        var deliveryDate;
+        // Render initial cached/calculated dates
+        var el;
+        el = document.getElementById('trackOrderedDate'); if (el) el.textContent = dates.orderDateText;
+        el = document.getElementById('trackPaidDate'); if (el) el.textContent = dates.orderDateText;
+        el = document.getElementById('trackDeliveryDate'); if (el) el.textContent = dates.deliveryDateText;
+        el = document.getElementById('tlOrderPlaced'); if (el) el.textContent = dates.orderDateText;
+        el = document.getElementById('tlPacking'); if (el) el.textContent = dates.packDateText;
+        el = document.getElementById('tlOutDelivery'); if (el) el.textContent = 'Expected ' + dates.deliveryDateText;
 
-        if (storedPurchaseIso && !isNaN(new Date(storedPurchaseIso).getTime())) {
-          purchaseDate = new Date(storedPurchaseIso);
-          if (storedDelivIso && !isNaN(new Date(storedDelivIso).getTime())) {
-            deliveryDate = new Date(storedDelivIso);
-          } else {
-            deliveryDate = new Date(purchaseDate.getTime() + 8 * 86400000);
-          }
-        } else {
-          var now = new Date();
-          purchaseDate = now;
-          deliveryDate = new Date(now.getTime() + 8 * 86400000);
-          try {
-            localStorage.setItem(pKey, purchaseDate.toISOString());
-            localStorage.setItem(dKey, deliveryDate.toISOString());
-            localStorage.setItem('takealot_order_date_fmt_' + oid, fmtShort(purchaseDate));
-            localStorage.setItem('takealot_deliv_date_fmt_' + oid, fmtShort(deliveryDate));
-          } catch(e){}
-        }
+        // Sync with API (Single Source of Truth)
+        var apiUrl = '/api/order?order=' + encodeURIComponent(oid) + '&auto_notify=1';
+        fetch(apiUrl)
+          .then(function (r) { return r.json(); })
+          .then(function (order) {
+            if (!order || order.error) return;
+            if (order.product_image && /ps5-/i.test(order.product_image)) {
+              if (imgEl) {
+                imgEl.onerror = function () { this.onerror = null; this.src = '/images/ps5-slim-bundle-main.jpg'; };
+                imgEl.src = order.product_image;
+              }
+            }
+            if (order.product_name && titleEl) {
+              titleEl.textContent = order.product_name;
+            }
 
-        _renderTracking(purchaseDate, deliveryDate, 'PROCESSING');
-      } catch(e) { console.error(e); }
-    }
+            var oDateStr = order.order_date_formatted || fmt(order.received_date);
+            var dDateStr = order.delivery_date_formatted || fmt(order.delivery_date);
+
+            if (oDateStr) {
+              if (el = document.getElementById('trackOrderedDate')) el.textContent = oDateStr;
+              if (el = document.getElementById('trackPaidDate')) el.textContent = oDateStr;
+              if (el = document.getElementById('tlOrderPlaced')) el.textContent = oDateStr;
+              try { localStorage.setItem('takealot_order_date_' + oid, oDateStr); } catch(e){}
+            }
+
+            if (dDateStr) {
+              if (el = document.getElementById('trackDeliveryDate')) el.textContent = dDateStr;
+              if (el = document.getElementById('tlOutDelivery')) el.textContent = 'Expected ' + dDateStr;
+              try { localStorage.setItem('takealot_delivery_date_' + oid, dDateStr); } catch(e){}
+            }
+
+            if (order.received_date) {
+              var rParts = getJohannesburgDateParts(order.received_date);
+              var packAnchor = new Date(Date.UTC(rParts.year, rParts.month - 1, rParts.day + 4, 12, 0, 0));
+              if (el = document.getElementById('tlPacking')) el.textContent = 'Expected ' + fmt(packAnchor);
+            }
+
+            applyStatusToTimeline(order.status, order.delivery_date);
+          })
+          .catch(function (err) {
+            console.warn('[track] API sync warning:', err);
+          });
+      } catch (e) { console.error(e); }
+    })();
   </script>
 
 </body>
+
 </html>
