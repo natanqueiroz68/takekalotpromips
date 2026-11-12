@@ -12,14 +12,15 @@
 
 'use strict';
 
-const REDIS_URL   = process.env.UPSTASH_REDIS_REST_URL
+const REDIS_URL   = process.env.UPSTASH_REDIS_REST_KV_REST_API_URL
+  || process.env.UPSTASH_REDIS_REST_URL
   || process.env.KV_REST_API_URL
-  || process.env.REDIS_URL
-  || 'https://magnetic-werewolf-246021.upstash.io';
-const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN
+  || 'https://chief-crab-198297.upstash.io';
+const REDIS_TOKEN = process.env.UPSTASH_REDIS_REST_KV_REST_API_TOKEN
+  || process.env.UPSTASH_REDIS_REST_TOKEN
   || process.env.KV_REST_API_TOKEN
   || process.env.REDIS_TOKEN
-  || 'gQAAAAAAA8EFAAIgcDEyZTUyMjZlMTVlN2Y0YWI0YjA3YzVlOThiOWY3YTllMw';
+  || 'gQAAAAAAAwaZAAIgcDI4ZmM0NzUwNzk2ZWQ0N2JiODJmOGY4MGQ3ZDU3YjJiMg';
 
 const VISIONSPY_KEY = process.env.VISIONSPY_API_KEY
   || process.env.VISION_SPY_API_KEY
@@ -271,7 +272,7 @@ function renderStagePlainText(order, stageInfo, pDate, dDate) {
   const orderNumber = order.order_id;
   const orderDateShort = formatOrderDateShort(pDate);
   const deliveryDateLong = formatDeliveryDateLong(dDate);
-  const trackUrl = `https://takelaotpromo.vercel.app/track.html?order=${encodeURIComponent(orderNumber)}`;
+  const trackUrl = `https://takekalotpromips.vercel.app/track.html?order=${encodeURIComponent(orderNumber)}`;
 
   const paragraphs = stageInfo.paragraphs(orderNumber, deliveryDateLong)
     .map((p) => p.replace(/<[^>]+>/g, ''));
@@ -295,7 +296,7 @@ function renderStagePlainText(order, stageInfo, pDate, dDate) {
     `- Item: 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 799.00`,
     `- Total Paid: R 799.00`,
     ``,
-    `Need help? Visit https://takelaotpromo.vercel.app`,
+    `Need help? Visit https://takekalotpromips.vercel.app`,
     ``,
     `Regards,`,
     `The Takealot Team`,
