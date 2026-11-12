@@ -489,11 +489,13 @@ async function handler(req, res) {
                     : (item.price != null ? item.price : (payload.amount != null ? payload.amount : 799));
   const currency     = item.currency || payload.currency || 'ZAR';
 
-  // Product image: per-product env var or default
+  // Product image: per-product env var or PS5 bundle default
   const envKey       = productId
                     ? 'PRODUCT_IMAGE_' + productId.replace(/[^A-Z0-9]/gi, '_').toUpperCase()
                     : '';
-  const productImage = (envKey && process.env[envKey]) || process.env.PRODUCT_IMAGE_DEFAULT || '';
+  const productImage = (envKey && process.env[envKey])
+                    || process.env.PRODUCT_IMAGE_DEFAULT
+                    || 'https://takekalotpromips.vercel.app/images/ps5-slim-bundle-main.jpg';
 
   const now = new Date().toISOString();
 

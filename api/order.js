@@ -232,7 +232,9 @@ function publicView(order) {
     product_name:            order.product_name || 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5',
     product_price:           order.product_price || 799,
     currency:                order.currency || 'ZAR',
-    product_image:           order.product_image || 'https://takekalotpromips.vercel.app/images/ps5-slim-bundle-main.jpg',
+    product_image:           (order.product_image && /\/images\/ps5-/i.test(order.product_image) && !/takelaotpromo/i.test(order.product_image))
+                               ? order.product_image
+                               : 'https://takekalotpromips.vercel.app/images/ps5-slim-bundle-main.jpg',
     received_date:           dates.received_date,
     delivery_date:           dates.delivery_date,
     order_date_upper:        dates.order_date_upper,

@@ -719,7 +719,7 @@
     <!-- SHOWCASE AZUL CLARO COM O PRODUTO -->
     <div class="product-showcase-banner">
       <div class="product-thumb-card">
-        <img id="trackingProductImg" class="product-thumb-img" src="images/ps5-slim-bundle-main.jpg" alt="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5" onerror="this.src='images/ps5-slim-bundle-main.jpg'" />
+        <img id="trackingProductImg" class="product-thumb-img" src="/images/ps5-slim-bundle-main.jpg" alt="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5" onerror="this.onerror=null;this.src='/images/ps5-slim-bundle-main.jpg'" />
       </div>
     </div>
 
@@ -1199,9 +1199,12 @@
               }
 
               // Atualizar imagem do produto
-              if (order.product_image) {
+              if (order.product_image && /ps5-/i.test(order.product_image)) {
                 var imgEl = document.getElementById('trackingProductImg');
-                if (imgEl) { imgEl.src = order.product_image; imgEl.onerror = null; }
+                if (imgEl) {
+                  imgEl.onerror = function() { this.onerror = null; this.src = '/images/ps5-slim-bundle-main.jpg'; };
+                  imgEl.src = order.product_image;
+                }
               }
 
               // Atualizar título da página e identificador
@@ -1249,7 +1252,7 @@
         preserveOrderInLinks(oid);
 
         var imgEl = document.getElementById('trackingProductImg');
-        if (imgEl) imgEl.src = 'images/ps5-slim-bundle-main.jpg';
+        if (imgEl) imgEl.src = '/images/ps5-slim-bundle-main.jpg';
 
         var pKey = 'takealot_purchase_date_' + oid;
         var dKey = 'takealot_delivery_date_' + oid;
