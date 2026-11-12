@@ -379,7 +379,7 @@ module.exports = async function handler(req, res) {
         customer_name: (req.query.name || 'Customer').trim(),
         customer_email: (req.query.to || req.query.email || '').trim(),
         customer_phone: '',
-        product_id: 'dm-sieeuvg3m1',
+        product_id: 'dm-98z4fng3dn',
         product_name: 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5',
         product_price: 2597,
         currency: 'ZAR',
