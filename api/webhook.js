@@ -170,12 +170,12 @@ function renderOrderPlainText(order) {
     `- Delivery Method: Courier`,
     ``,
     `ITEMS IN THIS ORDER:`,
-    `- 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 799.00`,
+    `- 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 2,597.00`,
     ``,
     `PAYMENT SUMMARY:`,
-    `- Subtotal: R 799.00`,
+    `- Subtotal: R 2,597.00`,
     `- Shipping: Free`,
-    `- Total Paid: R 799.00`,
+    `- Total Paid: R 2,597.00`,
     ``,
     `TRACK YOUR ORDER:`,
     `${trackUrl}`,
@@ -486,7 +486,7 @@ async function handler(req, res) {
                     || 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5';
   const productPrice = item.totalPrice != null
                     ? item.totalPrice
-                    : (item.price != null ? item.price : (payload.amount != null ? payload.amount : 799));
+                    : (item.price != null ? item.price : (payload.amount != null ? payload.amount : 2597));
   const currency     = item.currency || payload.currency || 'ZAR';
 
   // Product image: per-product env var or PS5 bundle default

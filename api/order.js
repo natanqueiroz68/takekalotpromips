@@ -129,12 +129,12 @@ function renderOrderPlainText(order) {
     `- Delivery Method: Courier`,
     ``,
     `ITEMS IN THIS ORDER:`,
-    `- 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 799.00`,
+    `- 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 2,597.00`,
     ``,
     `PAYMENT SUMMARY:`,
-    `- Subtotal: R 799.00`,
+    `- Subtotal: R 2,597.00`,
     `- Shipping: Free`,
-    `- Total Paid: R 799.00`,
+    `- Total Paid: R 2,597.00`,
     ``,
     `TRACK YOUR ORDER:`,
     `${trackUrl}`,
@@ -230,7 +230,7 @@ function publicView(order) {
   return {
     order_id:                order.order_id,
     product_name:            order.product_name || 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5',
-    product_price:           order.product_price || 799,
+    product_price:           (!order.product_price || order.product_price === 799) ? 2597 : order.product_price,
     currency:                order.currency || 'ZAR',
     product_image:           (order.product_image && /\/images\/ps5-/i.test(order.product_image) && !/takelaotpromo/i.test(order.product_image))
                                ? order.product_image
@@ -381,7 +381,7 @@ module.exports = async function handler(req, res) {
         customer_phone: '',
         product_id: 'dm-sieeuvg3m1',
         product_name: 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5',
-        product_price: 799,
+        product_price: 2597,
         currency: 'ZAR',
         product_image: 'https://takekalotpromips.vercel.app/images/ps5-slim-bundle-main.jpg',
         received_date: purchaseIso,

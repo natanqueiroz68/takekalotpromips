@@ -199,7 +199,7 @@
 
   <!-- ── INBOX PREVIEW & PREHEADER (OFFICIAL TRANSACTIONAL RECEIPT) ── -->
   <div style="display: none; max-height: 0px; overflow: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-width: 0px; opacity: 0; color: #f4f4f4;">
-    Official receipt and order confirmation for Takealot order #{{order_number}}. Total paid: R 799.00. Scheduled courier delivery: {{delivery_date_long}}.
+    Official receipt and order confirmation for Takealot order #{{order_number}}. Total paid: R 2,597.00. Scheduled courier delivery: {{delivery_date_long}}.
     &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;
   </div>
 
@@ -390,7 +390,7 @@
                   <!-- Product Price -->
                   <td width="80" align="right" valign="top">
                     <span class="email-product-price" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #111827; white-space: nowrap;">
-                      R 799.00
+                      R 2,597.00
                     </span>
                   </td>
                 </tr>
@@ -410,7 +410,7 @@
                           Subtotal:
                         </td>
                         <td align="right" class="email-total-val" style="padding: 5px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; color: #111827;">
-                          R 799.00
+                          R 2,597.00
                         </td>
                       </tr>
                       <tr>
@@ -426,7 +426,7 @@
                           Total:
                         </td>
                         <td align="right" class="email-total-border email-total-val" style="border-top: 1px solid #e5e7eb; padding: 10px 0 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #111827;">
-                          R 799.00
+                          R 2,597.00
                         </td>
                       </tr>
                     </table>

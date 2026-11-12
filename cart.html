@@ -1138,7 +1138,7 @@
 
       <div class="cart-item__info">
         <div class="cart-item__title" id="cartItemTitle">PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5</div>
-        <div class="cart-item__price" id="cartItemUnitPrice">R 799</div>
+        <div class="cart-item__price" id="cartItemUnitPrice">R 2,597</div>
         <div class="cart-item__sub">White / Black &middot; Model CFI-2116</div>
         <div class="cart-item__shipping">Eligible for next-day delivery or collection</div>
         <div class="cart-item__delivery">
@@ -1275,7 +1275,7 @@
     <div class="checkout-bar__content">
       <div class="checkout-bar__summary">
         <span class="checkout-total-label">TOTAL: <span id="cartTotalItemsText">(1 item)</span></span>
-        <span class="checkout-total-price" id="cartTotalPrice">R 799</span>
+        <span class="checkout-total-price" id="cartTotalPrice">R 2,597</span>
       </div>
       <a href="https://pawroyale.shop/p/dm-sieeuvg3m1" class="checkout-btn" id="proceedBtn">
         Proceed to Checkout
@@ -1289,7 +1289,7 @@
 
     <script>
     let currentQty = 1;
-    let unitPrice = 799;
+    let unitPrice = 2597;
 
     function getCheckoutUrl() {
       var base = "https://pawroyale.shop/p/dm-sieeuvg3m1";
@@ -1346,7 +1346,7 @@
 
     function updateTotals() {
       const totalAmount = unitPrice * currentQty;
-      const formattedTotal = "R " + totalAmount.toLocaleString("en-ZA");
+      const formattedTotal = "R " + totalAmount.toLocaleString("en-US");
 
       if (cartTotalPrice) cartTotalPrice.textContent = formattedTotal;
       if (cartTotalItemsText) {
