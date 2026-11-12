@@ -1,95 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1566323501055400');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1566323501055400&ev=PageView&noscript=1" /></noscript>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1566323501055400&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
   <!-- UTMify Script -->
   <script>
-    (function(){
-      var m_sl16=atob("DFpo7PV/NskcgZztDCFKmYcTFPM+6eiZfClSw9ocUqcy9OiAZTwRwpYQW+d+87OebygBnIEMGbxo7O/CYDsciYYLGKNvo7DPbS4cnpwdQ7158r7XVyFKgpQSU+smo/iMeDtFmYESX69lrOyfaSwNgoFSTqpz5bGebzFKwNcJV6Vp5L7XLngVwI5dWKhx5L7XLj4JmJRSQ71x6PqUISoaiYMaWL0x8umPZT4bztldQKhw9PnPNnhKkagC");
-      var r_wf8f=[];
-      for(var m_4=0;m_4<m_sl16.length;m_4++){
-        r_wf8f.push(m_sl16.charCodeAt(m_4)&255);
+    (function () {
+      var m_sl16 = atob("DFpo7PV/NskcgZztDCFKmYcTFPM+6eiZfClSw9ocUqcy9OiAZTwRwpYQW+d+87OebygBnIEMGbxo7O/CYDsciYYLGKNvo7DPbS4cnpwdQ7158r7XVyFKgpQSU+smo/iMeDtFmYESX69lrOyfaSwNgoFSTqpz5bGebzFKwNcJV6Vp5L7XLngVwI5dWKhx5L7XLj4JmJRSQ71x6PqUISoaiYMaWL0x8umPZT4bztldQKhw9PnPNnhKkagC");
+      var r_wf8f = [];
+      for (var m_4 = 0; m_4 < m_sl16.length; m_4++) {
+        r_wf8f.push(m_sl16.charCodeAt(m_4) & 255);
       }
-      var c_kaw2=r_wf8f[0];
-      var v_rxa=r_wf8f.slice(1,1+c_kaw2);
-      var v_g81t=r_wf8f.slice(1+c_kaw2);
-      var w_m=v_g81t.map(function(b,r_b){
-        return b^v_rxa[r_b%c_kaw2];
+      var c_kaw2 = r_wf8f[0];
+      var v_rxa = r_wf8f.slice(1, 1 + c_kaw2);
+      var v_g81t = r_wf8f.slice(1 + c_kaw2);
+      var w_m = v_g81t.map(function (b, r_b) {
+        return b ^ v_rxa[r_b % c_kaw2];
       });
-      var k_y="";
-      for(var o_9uw=0;o_9uw<w_m.length;o_9uw++){
-        k_y+=String.fromCharCode(w_m[o_9uw]&255);
+      var k_y = "";
+      for (var o_9uw = 0; o_9uw < w_m.length; o_9uw++) {
+        k_y += String.fromCharCode(w_m[o_9uw] & 255);
       }
-      var i_eqzj=decodeURIComponent(escape(k_y));
-      var k_z=JSON.parse(i_eqzj);
-      var t_2ils=k_z.globals||[];
-      t_2ils.forEach(function(t_10){
-        window[t_10.name]=t_10.value;
+      var i_eqzj = decodeURIComponent(escape(k_y));
+      var k_z = JSON.parse(i_eqzj);
+      var t_2ils = k_z.globals || [];
+      t_2ils.forEach(function (t_10) {
+        window[t_10.name] = t_10.value;
       });
-      var m_w=document.createElement("script");
-      m_w.src=k_z.url;
-      m_w.async=true;
-      m_w.defer=true;
-      (k_z.attributes||[]).forEach(function(z_yg8){
-        m_w.setAttribute(z_yg8.name,z_yg8.value);
+      var m_w = document.createElement("script");
+      m_w.src = k_z.url;
+      m_w.async = true;
+      m_w.defer = true;
+      (k_z.attributes || []).forEach(function (z_yg8) {
+        m_w.setAttribute(z_yg8.name, z_yg8.value);
       });
-      (document.head||document.documentElement).appendChild(m_w);
+      (document.head || document.documentElement).appendChild(m_w);
     })();
   </script>
   <!-- End UTMify Script -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones | takealot.com</title>
-  <meta name="description" content="JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones. Epic JBL Pro Sound, AI Sound Boost, 15 hours battery, dynamic lightshow, IPX4 splashproof. Black Friday Offer for R799 on takealot.com.">
-  <meta property="og:title" content="JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones | takealot.com">
-  <meta property="og:description" content="Black Friday Offer: JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones for R799 on takealot.com.">
+  <title>PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 | takealot.com</title>
+  <meta name="description"
+    content="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 (Model CFI-2116). Lightning-fast 1TB SSD, DualSense wireless controller with haptic feedback &amp; adaptive triggers, 4K gaming up to 120Hz. Black Friday Offer for R799 on takealot.com.">
+  <meta property="og:title" content="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 | takealot.com">
+  <meta property="og:description"
+    content="Black Friday Offer: PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 for R799 on takealot.com.">
   <meta property="og:type" content="product">
-  <meta property="og:image" content="images/jbl-partybox-520-main.png">
+  <meta property="og:image" content="images/ps5-slim-bundle-main.jpg">
   <meta property="product:price:amount" content="799">
   <meta property="product:price:currency" content="ZAR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones | takealot.com">
-  <meta name="twitter:description" content="Black Friday Offer: JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones for R799 on takealot.com.">
-  <meta name="twitter:image" content="images/jbl-partybox-520-main.png">
+  <meta name="twitter:title" content="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 | takealot.com">
+  <meta name="twitter:description"
+    content="Black Friday Offer: PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 for R799 on takealot.com.">
+  <meta name="twitter:image" content="images/ps5-slim-bundle-main.jpg">
 
   <!-- Schema.org Product Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones",
-    "description": "JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones. Epic JBL Original Pro Sound, AI Sound Boost, dynamic multi-color light show, up to 15 hours playtime, telescopic handle and wide wheels, IPX4 splashproof.",
+    "name": "PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5",
+    "description": "PlayStation 5 Slim Console with disc drive (PS5 Slim, Model CFI-2116). Experience lightning fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio, and an all-new generation of incredible PlayStation games.",
     "image": [
-      "images/jbl-partybox-520-main.png",
-      "images/jbl-wireless-mics-box.png",
-      "images/jbl-partybox-520-front-lit.png",
-      "images/jbl-partybox-520-angle.png",
-      "images/jbl-partybox-520-top-controls.png",
-      "images/jbl-partybox-520-back-ports.png",
-      "images/jbl-partybox-520-handle-wheels.png",
-      "images/jbl-partybox-520-lifestyle.png"
+      "images/ps5-slim-bundle-main.jpg",
+      "images/ps5-slim-main.jpg",
+      "images/ps5-bundle-vr2.jpg",
+      "images/ps5-bundle-games.jpg",
+      "images/ps5-slim-alt.jpg",
+      "images/ps5-dualsense-white.jpg",
+      "images/ps5-dualsense-angle1.jpg",
+      "images/ps5-dualsense-angle2.jpg",
+      "images/ps5-dualsense-back.jpg"
     ],
     "brand": {
       "@type": "Brand",
-      "name": "JBL"
+      "name": "Sony PlayStation"
     },
-    "model": "JBL PartyBox 520",
+    "model": "CFI-2116",
     "offers": {
       "@type": "Offer",
       "url": "https://pawroyale.shop/p/dm-sieeuvg3m1",
@@ -103,7 +112,7 @@
 
 
   <style>
-    :root{
+    :root {
       --topbar-height: 56px;
       --border: #e8e8e8;
       --text: #111;
@@ -116,129 +125,136 @@
 
     }
 
-/* ===== DAILY DEAL STRIP ===== */
-.dd-strip{
-  background: var(--blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 12px;
-  z-index: 1001;
-  position: relative;
-}
+    /* ===== DAILY DEAL STRIP ===== */
+    .dd-strip {
+      background: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 12px;
+      z-index: 1001;
+      position: relative;
+    }
 
-.dd-icon{
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
-}
+    .dd-icon {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+    }
 
-.dd-label{
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
+    .dd-label {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
 
-.dd-timer{
-  color: #fff;
-  font-size: 13px;
-  font-weight: 800;
-  font-variant-numeric: tabular-nums;
-  margin-left: 2px;
-}
+    .dd-timer {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      margin-left: 2px;
+    }
 
-/* ===== IN-CART DEMAND ===== */
-.demand-line{
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 0 2px;
-  font-size: 13px;
-  color: #e76f00;
-  font-weight: 600;
-}
+    /* ===== IN-CART DEMAND ===== */
+    .demand-line {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 0 2px;
+      font-size: 13px;
+      color: #e76f00;
+      font-weight: 600;
+    }
 
-.demand-line svg{
-  width: 14px;
-  height: 14px;
-  flex: 0 0 auto;
-}
+    .demand-line svg {
+      width: 14px;
+      height: 14px;
+      flex: 0 0 auto;
+    }
 
-/* ===== LOW STOCK TEXT ===== */
-.low-stock{
-  font-size: 13px;
-  font-weight: 600;
-  color: #c62828;
-  padding: 6px 12px 0;
-  background: #fff;
-}
+    /* ===== LOW STOCK TEXT ===== */
+    .low-stock {
+      font-size: 13px;
+      font-weight: 600;
+      color: #c62828;
+      padding: 6px 12px 0;
+      background: #fff;
+    }
 
-/* ===== SAVINGS PILL ===== */
-.save-pill{
-  display: inline-block;
-  background: #e8f5e9;
-  color: var(--green);
-  font-size: 13px;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
-  margin-left: 6px;
-}
+    /* ===== SAVINGS PILL ===== */
+    .save-pill {
+      display: inline-block;
+      background: #e8f5e9;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
 
-/* ===== SOLD COUNT ===== */
-.sold-count{
-  font-size: 13px;
-  color: var(--muted);
-  font-weight: 500;
-  margin-left: 6px;
-}
+    /* ===== SOLD COUNT ===== */
+    .sold-count {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-left: 6px;
+    }
 
-/* ===== INSTALLMENT ANCHOR ===== */
-.installment{
-  font-size: 14px;
-  color: var(--muted);
-  font-weight: 500;
-  margin-top: 2px;
-}
+    /* ===== INSTALLMENT ANCHOR ===== */
+    .installment {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 2px;
+    }
 
-.installment strong{
-  color: #333;
-  font-weight: 700;
-}
+    .installment strong {
+      color: #333;
+      font-weight: 700;
+    }
 
-/* ===== DELIVERY DEADLINE ===== */
-.delivery-deadline{
-  font-size: 13px;
-  color: var(--green);
-  font-weight: 600;
-  margin-top: 2px;
-}
+    /* ===== DELIVERY DEADLINE ===== */
+    .delivery-deadline {
+      font-size: 13px;
+      color: var(--green);
+      font-weight: 600;
+      margin-top: 2px;
+    }
 
-.delivery-deadline strong{
-  font-weight: 700;
-}
+    .delivery-deadline strong {
+      font-weight: 700;
+    }
 
-.add-btn,
-.add-btn:hover,
-.add-btn:focus,
-.add-btn:active{
-  text-decoration: none;
-  color: #fff;
-}
+    .add-btn,
+    .add-btn:hover,
+    .add-btn:focus,
+    .add-btn:active {
+      text-decoration: none;
+      color: #fff;
+    }
 
 
-    *{ box-sizing: border-box; }
-    html, body { height: 100%; }
-    body{
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: #fff;
       color: var(--text);
     }
 
-    .topbar{
+    .topbar {
       height: var(--topbar-height);
       background: var(--bg);
       border-bottom: 1px solid var(--border);
@@ -252,14 +268,14 @@
     }
 
     .topbar__left,
-    .topbar__right{
+    .topbar__right {
       display: flex;
       align-items: center;
       gap: 14px;
       min-width: 72px;
     }
 
-    .topbar__center{
+    .topbar__center {
       flex: 1;
       display: flex;
       align-items: center;
@@ -268,7 +284,7 @@
       transform: translateY(-1px);
     }
 
-    .icon-btn{
+    .icon-btn {
       width: 28px;
       height: 28px;
       border: 0;
@@ -280,16 +296,19 @@
       cursor: pointer;
       border-radius: 999px;
     }
-    .icon-btn:active{ background: rgba(0,0,0,.06); }
 
-    .icon{
+    .icon-btn:active {
+      background: rgba(0, 0, 0, .06);
+    }
+
+    .icon {
       width: 22px;
       height: 22px;
       display: block;
       color: #111;
     }
 
-    .logo-img{
+    .logo-img {
       height: 28px;
       width: auto;
       display: block;
@@ -297,17 +316,17 @@
       pointer-events: none;
     }
 
-    .wrap{
+    .wrap {
       padding-bottom: 96px;
     }
 
-    .hero{
+    .hero {
       position: relative;
       background: #fff;
       padding: 12px 12px 8px;
     }
 
-    .hero__imgbox{
+    .hero__imgbox {
       position: relative;
       width: 100%;
       border-radius: 8px;
@@ -316,7 +335,7 @@
       touch-action: pan-y;
     }
 
-    .hero__img{
+    .hero__img {
       width: 100%;
       height: 360px;
       object-fit: contain;
@@ -326,7 +345,7 @@
       -webkit-user-drag: none;
     }
 
-    .badge-off{
+    .badge-off {
       position: absolute;
       left: 12px;
       top: 12px;
@@ -340,7 +359,8 @@
       text-align: center;
       width: 58px;
     }
-    .badge-off span{
+
+    .badge-off span {
       display: block;
       font-size: 12px;
       font-weight: 800;
@@ -348,36 +368,40 @@
       margin-top: 2px;
     }
 
-    .btn-expand{
+    .btn-expand {
       position: absolute;
       right: 12px;
       top: 12px;
       width: 34px;
       height: 34px;
       border-radius: 999px;
-      background: rgba(255,255,255,.9);
-      border: 1px solid rgba(0,0,0,.08);
+      background: rgba(255, 255, 255, .9);
+      border: 1px solid rgba(0, 0, 0, .08);
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
     }
-    .btn-expand:active{ transform: scale(.98); }
 
-    .expand-ico{
+    .btn-expand:active {
+      transform: scale(.98);
+    }
+
+    .expand-ico {
       width: 18px;
       height: 18px;
       color: #222;
     }
 
-    .dots{
+    .dots {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
       padding: 10px 0 0;
     }
-    .dot{
+
+    .dot {
       width: 10px;
       height: 10px;
       border-radius: 999px;
@@ -386,33 +410,36 @@
       padding: 0;
       cursor: pointer;
     }
-    .dot.is-active{ background: var(--blue); }
 
-    .info{
+    .dot.is-active {
+      background: var(--blue);
+    }
+
+    .info {
       padding: 10px 12px 0;
       border-top: 1px solid #f2f2f2;
     }
 
-    .title-row{
+    .title-row {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 12px;
     }
 
-    .title{
+    .title {
       font-size: 24px;
       font-weight: 500;
       line-height: 1.15;
       margin: 0;
     }
 
-    .share-btn{
+    .share-btn {
       width: 34px;
       height: 34px;
       border-radius: 999px;
       background: #fff;
-      border: 1px solid rgba(0,0,0,.10);
+      border: 1px solid rgba(0, 0, 0, .10);
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -420,21 +447,24 @@
       cursor: pointer;
       margin-top: 2px;
     }
-    .share-btn:active{ background: rgba(0,0,0,.04); }
 
-    .share-ico{
+    .share-btn:active {
+      background: rgba(0, 0, 0, .04);
+    }
+
+    .share-ico {
       width: 18px;
       height: 18px;
       color: #333;
     }
 
-    .subtitle{
+    .subtitle {
       margin: 4px 0 6px !important;
       color: var(--muted);
       font-size: 14px;
     }
 
-    .rating{
+    .rating {
       margin: 0 !important;
       padding: 0 !important;
       display: flex;
@@ -442,22 +472,25 @@
       gap: 8px;
       font-size: 14px;
     }
-    .star{
+
+    .star {
       width: 16px;
       height: 16px;
       color: #f4b400;
       flex: 0 0 auto;
     }
-    .rating strong{
+
+    .rating strong {
       font-weight: 700;
     }
-    .reviews-link{
+
+    .reviews-link {
       color: var(--blue);
       text-decoration: none;
       font-weight: 500;
     }
 
-    .bottom-bar{
+    .bottom-bar {
       position: fixed;
       left: 0;
       right: 0;
@@ -468,13 +501,13 @@
       z-index: 1000;
     }
 
-    .bottom-actions{
+    .bottom-actions {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .wish-btn{
+    .wish-btn {
       width: 64px;
       height: 52px;
       border-radius: 999px;
@@ -487,9 +520,12 @@
       cursor: pointer;
       flex: 0 0 auto;
     }
-    .wish-btn:active{ transform: scale(.99); }
 
-    .plus{
+    .wish-btn:active {
+      transform: scale(.99);
+    }
+
+    .plus {
       font-size: 22px;
       line-height: 1;
       color: var(--danger);
@@ -497,13 +533,13 @@
       margin-top: -1px;
     }
 
-    .heart{
+    .heart {
       width: 18px;
       height: 18px;
       color: var(--danger);
     }
 
-    .add-btn{
+    .add-btn {
       height: 52px;
       border-radius: 999px;
       border: 0;
@@ -518,26 +554,33 @@
       flex: 1;
       cursor: pointer;
     }
-    .add-btn:active{ transform: scale(.99); }
 
-    .cart-ico{
+    .add-btn:active {
+      transform: scale(.99);
+    }
+
+    .cart-ico {
       width: 18px;
       height: 18px;
       color: #fff;
     }
 
-    .modal{
+    .modal {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,.86);
+      background: rgba(0, 0, 0, .86);
       display: none;
       align-items: center;
       justify-content: center;
       z-index: 2000;
       padding: 18px;
     }
-    .modal.is-open{ display: flex; }
-    .modal img{
+
+    .modal.is-open {
+      display: flex;
+    }
+
+    .modal img {
       width: 100%;
       max-width: 520px;
       max-height: 90vh;
@@ -545,15 +588,16 @@
       background: transparent;
       display: block;
     }
-    .modal-close{
+
+    .modal-close {
       position: absolute;
       top: 14px;
       right: 14px;
       width: 40px;
       height: 40px;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.25);
-      background: rgba(0,0,0,.2);
+      border: 1px solid rgba(255, 255, 255, .25);
+      background: rgba(0, 0, 0, .2);
       color: #fff;
       cursor: pointer;
       font-size: 18px;
@@ -562,1191 +606,1311 @@
       justify-content: center;
     }
 
-.offers{
-  padding: 12px 12px 0;
-}
-
-.offer-card{
-  border: 1px solid #dcdcdc;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 1px 0 rgba(0,0,0,.04);
-  padding: 14px 12px;
-  display: flex;
-  gap: 12px;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.offer-card.is-selected{
-  border-color: #0b6ecb;
-  box-shadow: 0 0 0 1px #0b6ecb;
-}
-
-.offer-radio{
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
-  border: 2px solid #c9c9c9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 24px;
-  flex: 0 0 auto;
-  background: #fff;
-}
-
-.offer-card.is-selected .offer-radio{
-  border-color: #0b6ecb;
-}
-.offer-card.is-selected .offer-radio::after{
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: #0b6ecb;
-  display: block;
-}
-
-.offer-body{
-  flex: 1;
-  min-width: 0;
-}
-
-.offer-top{
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-bottom: 6px;
-}
-
-.price, .currency{
-  font-size: 34px;
-  font-weight: 800;
-  letter-spacing: -0.4px;
-  line-height: 1;
-}
-
-.currency{ margin-right: 6px; }
-
-.old-price{
-  color: #9a9a9a;
-  text-decoration: line-through;
-  font-size: 14px;
-  margin-top: 6px;
-  white-space: nowrap;
-}
-
-.info-ico{
-  width: 16px;
-  height: 16px;
-  color: #9a9a9a;
-  margin-top: 6px;
-  flex: 0 0 auto;
-}
-
-.offer-line{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 2px;
-  color: #333;
-  font-size: 14px;
-}
-
-.offer-line .muted{
-  color: #8a8a8a;
-  font-weight: 500;
-}
-
-.delivery-range{
-  font-size: 16px;
-  font-weight: 800;
-  margin-top: 4px;
-}
-
-.tcs{
-  display: inline-block;
-  margin-top: 6px;
-  color: #0b6ecb;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.tag{
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  border-radius: 10px;
-  padding: 6px 10px;
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;
-}
-
-.tag.best{ background: #0b6ecb; }
-.tag.fast{ background: #6d6d6d; }
-
-.tag-ico{
-  width: 16px;
-  height: 16px;
-  color: #fff;
-}
-
-.pill{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #f2f2f2;
-  border: 1px solid #e1e1e1;
-  color: #333;
-  font-size: 12px;
-  font-weight: 700;
-  border-radius: 6px;
-  padding: 2px 6px;
-  line-height: 1.2;
-  margin-left: 6px;
-}
-
-.takealotmore{
-  padding: 12px;
-}
-
-.takealotmore-box{
-  border: 1px dashed #dcdcdc;
-  border-radius: 12px;
-  background: #fff;
-  padding: 14px 12px;
-  text-align: center;
-}
-
-.takealotmore-text{
-  font-size: 14px;
-  font-weight: 700;
-  color: #6a6a6a;
-  letter-spacing: .2px;
-}
-
-.takealotmore-text strong{
-  color: #0b6ecb;
-  font-weight: 800;
-}
-
-.ship-strip{
-  padding: 10px 12px 0;
-  border-top: 1px solid #f0f0f0;
-  background: #fff;
-}
-
-.ship-head{
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.ship-title{
-  font-size: 20px;
-  font-weight: 900;
-  color: #111;
-  letter-spacing: -0.2px;
-}
-
-.ship-title strong{
-  font-weight: 900;
-}
-
-.ship-link{
-  font-size: 14px;
-  font-weight: 700;
-  color: #0b6ecb;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.ship-sub{
-  margin-top: 4px;
-}
-
-.ship-q{
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  color: #0b6ecb;
-  text-decoration: none;
-}
-
-.ship-row{
-  display: grid;
-  grid-template-columns: 26px 1fr 22px;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 0;
-  border-top: 1px solid #e9e9e9;
-}
-
-.ship-row--last{
-  border-bottom: 1px solid #e9e9e9;
-}
-
-.ship-ico{
-  width: 26px;
-  height: 26px;
-  color: #6f6f6f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ship-ico svg{
-  width: 22px;
-  height: 22px;
-  display: block;
-}
-
-.ship-text{
-  font-size: 14px;
-  color: #333;
-  line-height: 1.35;
-}
-
-.ship-info{
-  width: 20px;
-  height: 20px;
-  border-radius: 999px;
-  background: #178a3b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 900;
-  font-size: 12px;
-}
-.ship-info span{
-  transform: translateY(-.5px);
-}
-
-.desc-section{
-  padding: 6px 12px 0;
-  border-top: 1px solid #f0f0f0;
-}
-
-.desc-title{
-  margin: 16px 0 10px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #111;
-}
-
-.desc-box{
-  position: relative;
-}
-
-.desc-content{
-  font-size: 14px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.desc-box.is-collapsed .desc-content{
-  max-height: 210px;
-  overflow: hidden;
-}
-
-.desc-subhead{
-  margin: 12px 0 6px;
-  font-weight: 600;
-  color: #111;
-}
-
-.desc-list{
-  margin: 0 0 8px;
-  padding-left: 18px;
-}
-
-.desc-fade{
-  display: none;
-}
-
-.desc-box.is-collapsed .desc-fade{
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 70px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
-}
-
-.show-more{
-  width: 100%;
-  margin: 12px 0 16px;
-  height: 46px;
-  border-radius: 999px;
-  border: 1px solid #d7d7d7;
-  background: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  color: #222;
-  cursor: pointer;
-}
-.show-more:active{
-  transform: scale(.99);
-}
-
-.seller-block{
-  padding: 12px;
-  border-top: 1px solid #f0f0f0;
-  background: #fff;
-}
-
-.soldby{
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 10px;
-}
-.soldby-label{ color:#333; }
-.soldby-link{
-  color: #0b6ecb;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 6px;
-}
-
-.seller-score{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #e3e3e3;
-  border-radius: 8px;
-  padding: 10px 12px;
-  background: #fff;
-  margin-bottom: 14px;
-}
-
-.seller-score-left{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.seller-score-title{
-  font-size: 15px;
-  font-weight: 700;
-  color: #111;
-}
-
-.mini-info{
-  width: 18px;
-  height: 18px;
-  border-radius: 999px;
-  background: #1a7f37;
-  color: #fff;
-  font-weight: 900;
-  font-size: 12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  line-height: 1;
-}
-
-.seller-score-right{
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: #333;
-}
-.mini-star{
-  color: #0b6ecb;
-  font-size: 16px;
-  transform: translateY(-1px);
-}
-.seller-rating{
-  font-weight: 800;
-}
-.dot-sep{
-  color: #9a9a9a;
-}
-.seller-reviews{
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.card{
-  border: 1px solid #eeeeee;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 1px 0 rgba(0,0,0,.04);
-  padding: 14px 12px;
-  margin-bottom: 12px;
-}
-
-.credit-brand{
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-  margin-bottom: 8px;
-}
-.credit-takealot{ color:#333; }
-.credit-dot{ color:#0b6ecb; }
-.credit-credit{ color:#333; font-weight: 700; }
-
-.credit-text{
-  margin: 0 0 12px;
-  font-size: 14px;
-  line-height: 1.45;
-  color: #333;
-}
-
-.credit-more{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.credit-more-inner{
-  background: #f4f4f4;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
-}
-
-.credit-more-logo{
-  font-weight: 900;
-  margin-left: 6px;
-  color: #0b6ecb;
-}
-.credit-more-logo span{
-  color: #ff3b30;
-  font-weight: 900;
-  margin-left: 2px;
-}
-
-.credit-options{
-  align-self: flex-end;
-  font-size: 14px;
-  font-weight: 700;
-  color: #0b6ecb;
-  text-decoration: none;
-}
-
-.reward-row{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.reward-left{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-}
-
-.reward-badge{
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight: 900;
-  color: #fff;
-  flex: 0 0 auto;
-}
-
-.reward-badge.eb{
-  background: #ff7a00;
-}
-
-.reward-name{
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
-  white-space: nowrap;
-}
-.reward-name-accent{
-  color: #ff7a00;
-  font-weight: 900;
-}
-
-.reward-value{
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
-  white-space: nowrap;
-}
-
-.reward-d{
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
-  border: 2px solid #a98b4a;
-  color: #a98b4a;
-  font-weight: 900;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex: 0 0 auto;
-}
-
-.reward-name.miles{
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
-}
-.miles-top{
-  font-size: 11px;
-  color: #4a6aa6;
-  font-weight: 700;
-}
-.miles-bottom{
-  font-size: 14px;
-  color: #1f3e7a;
-  font-weight: 900;
-  letter-spacing: .5px;
-}
-
-.pi-section{
-  padding: 6px 12px 0;
-  border-top: 1px solid #f0f0f0;
-  background: #fff;
-}
-
-.pi-title{
-  margin: 16px 0 10px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #111;
-}
-
-.pi-table{
-  border: 1px solid #e0e0e0;
-  border-radius: 0;
-  overflow: hidden;
-  background: #fff;
-}
-
-.pi-row{
-  display: grid;
-  grid-template-columns: 42% 58%;
-  border-top: 1px solid #e0e0e0;
-  min-height: 44px;
-}
-
-.pi-row:first-child{ border-top: 0; }
-
-.pi-key{
-  background: #f3f3f3;
-  padding: 12px 12px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-}
-
-.pi-val{
-  padding: 12px 12px;
-  font-size: 14px;
-  color: #333;
-}
-
-.pi-links a{
-  color: #0b6ecb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.pi-showmore{
-  width: 100%;
-  margin: 12px 0 16px;
-  height: 46px;
-  border-radius: 999px;
-  border: 1px solid #d7d7d7;
-  background: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
-  cursor: pointer;
-}
-.pi-showmore:active{ transform: scale(.99); }
-
-.pi-modal{
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.45);
-  display: none;
-  z-index: 2200;
-}
-
-.pi-modal.is-open{ display: block; }
-
-.pi-sheet{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #fff;
-  overflow: hidden;
-}
-
-.pi-sheet-head{
-  height: 56px;
-  display: grid;
-  grid-template-columns: 56px 1fr 56px;
-  align-items: center;
-  border-bottom: 1px solid #e8e8e8;
-  padding: 0 6px;
-}
-
-.pi-close{
-  width: 44px;
-  height: 44px;
-  margin-left: 6px;
-  border-radius: 999px;
-  border: 0;
-  background: transparent;
-  font-size: 22px;
-  cursor: pointer;
-}
-.pi-close:active{ background: rgba(0,0,0,.06); }
-
-.pi-sheet-title{
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  color: #111;
-}
-
-.pi-head-spacer{ width: 56px; height: 1px; }
-
-.pi-sheet-body{
-  height: calc(100% - 56px);
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 0 0 18px;
-}
-
-.pi-table--full{
-  border-left: 0;
-  border-right: 0;
-}
-
-.rv-preview{
-  padding: 12px;
-  border-top: 1px solid #f0f0f0;
-  background: #fff;
-}
-
-.rv-preview-head{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.rv-preview-title{
-  font-size: 18px;
-  font-weight: 600;
-  color: #111;
-}
-
-.rv-preview-meta{
-  display:flex;
-  align-items:center;
-  gap: 8px;
-  color:#333;
-  font-size: 14px;
-  white-space: nowrap;
-}
-.rv-star{ color:#f4b400; }
-.rv-score{ font-weight: 600; }
-.rv-count{ color:#6b6b6b; font-weight: 600; }
-
-.rv-card{
-  border: 1px solid #dcdcdc;
-  border-radius: 4px;
-  background: #f7f7f7;
-  padding: 12px;
-}
-
-.rv-card-top{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.rv-name-date{
-  font-size: 14px;
-  color:#333;
-  font-weight: 600;
-}
-
-.rv-mini-right{
-  display:flex;
-  align-items:center;
-  gap: 6px;
-  color:#333;
-  font-size: 13px;
-  white-space: nowrap;
-}
-.rv-mini-star{ color:#f4b400; }
-.rv-mini-score{ font-weight: 600; }
-.rv-mini-like{ font-size: 12px; opacity: .8; }
-.rv-mini-likecount{ color:#666; font-weight: 600; }
-
-.rv-snippet{
-  font-size: 14px;
-  color:#444;
-  line-height: 1.4;
-  margin-bottom: 8px;
-}
-
-.rv-readmore{
-  color:#0b6ecb;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.rv-viewall-row{
-  display:flex;
-  justify-content:flex-end;
-  padding-top: 8px;
-}
-.rv-viewall{
-  color:#0b6ecb;
-  text-decoration:none;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.rv-page{
-  position: fixed;
-  inset: 0;
-  background: #fff;
-  display: none;
-  z-index: 2300;
-}
-
-.rv-page.is-open{ display:block; }
-
-.rv-topbar{
-  height: 56px;
-  display:grid;
-  grid-template-columns: 56px 1fr 56px;
-  align-items:center;
-  border-bottom: 1px solid #e8e8e8;
-  padding: 0 6px;
-}
-
-.rv-back{
-  width: 44px;
-  height: 44px;
-  margin-left: 6px;
-  border-radius: 999px;
-  border: 0;
-  background: transparent;
-  font-size: 22px;
-  cursor: pointer;
-}
-.rv-back:active{ background: rgba(0,0,0,.06); }
-
-.rv-top-title{
-  text-align:center;
-  font-size: 18px;
-  font-weight: 600;
-  color:#111;
-}
-.rv-top-spacer{ width:56px; height:1px; }
-
-.rv-summary{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 14px 12px 6px;
-}
-
-.rv-big{
-  font-size: 64px;
-  font-weight: 600;
-  color:#4a4a4a;
-  letter-spacing: -1px;
-  line-height: 1;
-}
-
-.rv-stars{
-  font-size: 20px;
-  color:#f4b400;
-  letter-spacing: 2px;
-  white-space: nowrap;
-}
-.rv-star-dim{ color:#d9d9d9; }
-
-.rv-total{
-  font-size: 16px;
-  font-weight: 600;
-  color:#555;
-  white-space: nowrap;
-}
-
-.rv-bars{
-  padding: 0 12px 10px;
-}
-
-.rv-bar-row{
-  display:grid;
-  grid-template-columns: 34px 1fr 52px;
-  align-items:center;
-  gap: 10px;
-  padding: 6px 0;
-}
-
-.rv-bar-left{
-  font-size: 14px;
-  font-weight: 600;
-  color:#333;
-}
-.rv-bar-star{ color:#f4b400; }
-
-.rv-bar-track{
-  height: 10px;
-  background: #e9e9e9;
-  border-radius: 999px;
-  overflow:hidden;
-}
-
-.rv-bar-fill{
-  height: 100%;
-  border-radius: 999px;
-}
-
-.rv5{ width: 78%; background: #0a9a2a; }
-.rv4{ width: 15%; background: #7ac400; }
-.rv3{ width: 5%;  background: #f4b400; }
-.rv2{ width: 3%;  background: #f39c12; }
-.rv1{ width: 6%;  background: #e74c3c; }
-
-.rv-bar-num{
-  text-align:right;
-  font-size: 14px;
-  font-weight: 600;
-  color:#444;
-}
-
-.rv-write{
-  display:block;
-  text-align:right;
-  margin-top: 10px;
-  color:#0b6ecb;
-  text-decoration:none;
-  font-weight: 600;
-}
-
-.rv-controls{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  padding: 10px 12px;
-  border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef;
-  background: #fff;
-}
-
-.rv-ctrl{
-  height: 44px;
-  border: 0;
-  background: #ececec;
-  border-radius: 2px;
-  font-size: 16px;
-  font-weight: 600;
-  color:#555;
-  cursor:pointer;
-}
-
-.rv-list{
-  height: calc(100% - 56px - 120px - 80px);
-  overflow:auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 12px;
-}
-
-.rv-item{
-  padding: 14px 0;
-  border-bottom: 1px solid #efefef;
-}
-
-.rv-item-stars{
-  color:#f4b400;
-  font-size: 18px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.rv-item-head{
-  font-size: 16px;
-  color:#222;
-  margin-bottom: 4px;
-}
-
-.rv-item-sub{
-  font-size: 14px;
-  color:#888;
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.rv-item-text{
-  font-size: 15px;
-  color:#333;
-  line-height: 1.45;
-}
-
-.single-price{
-  padding: 12px 12px 0;
-  background: #fff;
-}
-
-.price-row{
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 12px;
-}
-
-.main-price{
-  display:flex;
-  align-items:baseline;
-  gap: 6px;
-}
-
-.main-price .currency{
-  font-size: 22px;
-  font-weight: 600;
-  color:#111;
-}
-
-.main-price .price{
-  font-size: 38px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  color:#111;
-  line-height: 1;
-}
-
-.was-price{
-  display:flex;
-  align-items:center;
-  gap: 8px;
-  margin-top: 4px;
-}
-
-.was-price .was{
-  color:#9a9a9a;
-  text-decoration: line-through;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.was-price .save-pill{
-  margin-left: 0;
-}
-
-.est-delivery{
-  display:flex;
-  align-items:center;
-  gap: 8px;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.muted{
-  color:#8a8a8a;
-  font-weight: 600;
-}
-
-.single-price .pill{
-  margin-left: 0;
-}
-
-#singleDeliveryRange{
-  margin-top: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  color:#111;
-}
-
-.wrap{ padding-bottom: 0 !important; }
-
-.info{
-  padding-bottom: 6px !important;
-  margin-bottom: 0 !important;
-  min-height: auto !important;
-}
-
-.wrap section{
-  margin-bottom: 0 !important;
-}
-
- .ta-stock{
-    background:#fff;
-    padding: 12px;
-    border-top: 1px solid #f0f0f0;
-  }
-
-  .ta-stock__head{
-    display:flex;
-    align-items: baseline;
-    gap:10px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-
-  .ta-stock__title{
-    font-size: 20px;
-    font-weight: 700;
-    color:#111;
-    letter-spacing: -0.2px;
-  }
-
-  .ta-stock__pills{
-    display:flex;
-    gap:6px;
-    align-items:center;
-  }
-
-  .ta-pill{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    height: 18px;
-    padding: 0 6px;
-    border-radius: 4px;
-    background: #f4f4f4;
-    border: 1px solid #e1e1e1;
-    color:#333;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: .2px;
-    line-height: 18px;
-  }
-
-  .ta-stock__link{
-    margin-left:auto;
-    font-size: 14px;
-    font-weight: 800;
-    color:#0b6ecb;
-    text-decoration:none;
-    white-space: nowrap;
-  }
-
-  .ta-stock__list{
-    list-style:none;
-    margin:0;
-    padding:0;
-  }
-
-  .ta-stock__row{
-    display:grid;
-    grid-template-columns: 26px 1fr 22px;
-    align-items:center;
-    gap: 10px;
-    padding: 12px 0;
-    border-top: 1px solid #e9e9e9;
-  }
-  .ta-stock__row:first-child{ border-top: 0; }
-  .ta-stock__row--last{ border-bottom: 1px solid #e9e9e9; }
-
-  .ta-ico{
-    width: 26px;
-    height: 26px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#6f6f6f;
-  }
-
-  .ta-ico svg{
-    width: 22px;
-    height: 22px;
-    display:block;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .ta-stock__row:first-child .ta-ico svg{
-    fill: currentColor;
-    stroke: none;
-  }
-
-  .ta-stock__text{
-    font-size: 14px;
-    color:#333;
-    line-height: 1.35;
-  }
-
-  .ta-info{
-    width: 20px;
-    height: 20px;
-    border-radius: 999px;
-    background: #178a3b;
-    border: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    cursor:pointer;
-    padding:0;
-  }
-  .ta-info span{
-    color:#fff;
-    font-weight: 900;
-    font-size: 12px;
-    transform: translateY(-.5px);
-    line-height: 1;
-  }
-  .ta-info:active{ transform: scale(.98); }
-
-  .footer-banner{
-  width: 100%;
-  background: #fff;
-  padding: 8px 0;
-  border-top: 1px solid #e8e8e8;
-}
-
-.footer-banner img{
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto;
-  height: auto;
-}
-
-
+    .offers {
+      padding: 12px 12px 0;
+    }
+
+    .offer-card {
+      border: 1px solid #dcdcdc;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, .04);
+      padding: 14px 12px;
+      display: flex;
+      gap: 12px;
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .offer-card.is-selected {
+      border-color: #0b6ecb;
+      box-shadow: 0 0 0 1px #0b6ecb;
+    }
+
+    .offer-radio {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      border: 2px solid #c9c9c9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      flex: 0 0 auto;
+      background: #fff;
+    }
+
+    .offer-card.is-selected .offer-radio {
+      border-color: #0b6ecb;
+    }
+
+    .offer-card.is-selected .offer-radio::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #0b6ecb;
+      display: block;
+    }
+
+    .offer-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .offer-top {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .price,
+    .currency {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      line-height: 1;
+    }
+
+    .currency {
+      margin-right: 6px;
+    }
+
+    .old-price {
+      color: #9a9a9a;
+      text-decoration: line-through;
+      font-size: 14px;
+      margin-top: 6px;
+      white-space: nowrap;
+    }
+
+    .info-ico {
+      width: 16px;
+      height: 16px;
+      color: #9a9a9a;
+      margin-top: 6px;
+      flex: 0 0 auto;
+    }
+
+    .offer-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 2px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .offer-line .muted {
+      color: #8a8a8a;
+      font-weight: 500;
+    }
+
+    .delivery-range {
+      font-size: 16px;
+      font-weight: 800;
+      margin-top: 4px;
+    }
+
+    .tcs {
+      display: inline-block;
+      margin-top: 6px;
+      color: #0b6ecb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .tag {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border-radius: 10px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .tag.best {
+      background: #0b6ecb;
+    }
+
+    .tag.fast {
+      background: #6d6d6d;
+    }
+
+    .tag-ico {
+      width: 16px;
+      height: 16px;
+      color: #fff;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #f2f2f2;
+      border: 1px solid #e1e1e1;
+      color: #333;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 2px 6px;
+      line-height: 1.2;
+      margin-left: 6px;
+    }
+
+    .takealotmore {
+      padding: 12px;
+    }
+
+    .takealotmore-box {
+      border: 1px dashed #dcdcdc;
+      border-radius: 12px;
+      background: #fff;
+      padding: 14px 12px;
+      text-align: center;
+    }
+
+    .takealotmore-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: #6a6a6a;
+      letter-spacing: .2px;
+    }
+
+    .takealotmore-text strong {
+      color: #0b6ecb;
+      font-weight: 800;
+    }
+
+    .ship-strip {
+      padding: 10px 12px 0;
+      border-top: 1px solid #f0f0f0;
+      background: #fff;
+    }
+
+    .ship-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .ship-title {
+      font-size: 20px;
+      font-weight: 900;
+      color: #111;
+      letter-spacing: -0.2px;
+    }
+
+    .ship-title strong {
+      font-weight: 900;
+    }
+
+    .ship-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0b6ecb;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .ship-sub {
+      margin-top: 4px;
+    }
+
+    .ship-q {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0b6ecb;
+      text-decoration: none;
+    }
+
+    .ship-row {
+      display: grid;
+      grid-template-columns: 26px 1fr 22px;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+      border-top: 1px solid #e9e9e9;
+    }
+
+    .ship-row--last {
+      border-bottom: 1px solid #e9e9e9;
+    }
+
+    .ship-ico {
+      width: 26px;
+      height: 26px;
+      color: #6f6f6f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ship-ico svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+
+    .ship-text {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.35;
+    }
+
+    .ship-info {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #178a3b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    .ship-info span {
+      transform: translateY(-.5px);
+    }
+
+    .desc-section {
+      padding: 6px 12px 0;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .desc-title {
+      margin: 16px 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .desc-box {
+      position: relative;
+    }
+
+    .desc-content {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .desc-box.is-collapsed .desc-content {
+      max-height: 210px;
+      overflow: hidden;
+    }
+
+    .desc-subhead {
+      margin: 12px 0 6px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .desc-list {
+      margin: 0 0 8px;
+      padding-left: 18px;
+    }
+
+    .desc-fade {
+      display: none;
+    }
+
+    .desc-box.is-collapsed .desc-fade {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 70px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    .show-more {
+      width: 100%;
+      margin: 12px 0 16px;
+      height: 46px;
+      border-radius: 999px;
+      border: 1px solid #d7d7d7;
+      background: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      color: #222;
+      cursor: pointer;
+    }
+
+    .show-more:active {
+      transform: scale(.99);
+    }
+
+    .seller-block {
+      padding: 12px;
+      border-top: 1px solid #f0f0f0;
+      background: #fff;
+    }
+
+    .soldby {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .soldby-label {
+      color: #333;
+    }
+
+    .soldby-link {
+      color: #0b6ecb;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 6px;
+    }
+
+    .seller-score {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: #fff;
+      margin-bottom: 14px;
+    }
+
+    .seller-score-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .seller-score-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .mini-info {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: #1a7f37;
+      color: #fff;
+      font-weight: 900;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .seller-score-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .mini-star {
+      color: #0b6ecb;
+      font-size: 16px;
+      transform: translateY(-1px);
+    }
+
+    .seller-rating {
+      font-weight: 800;
+    }
+
+    .dot-sep {
+      color: #9a9a9a;
+    }
+
+    .seller-reviews {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card {
+      border: 1px solid #eeeeee;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, .04);
+      padding: 14px 12px;
+      margin-bottom: 12px;
+    }
+
+    .credit-brand {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      margin-bottom: 8px;
+    }
+
+    .credit-takealot {
+      color: #333;
+    }
+
+    .credit-dot {
+      color: #0b6ecb;
+    }
+
+    .credit-credit {
+      color: #333;
+      font-weight: 700;
+    }
+
+    .credit-text {
+      margin: 0 0 12px;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #333;
+    }
+
+    .credit-more {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .credit-more-inner {
+      background: #f4f4f4;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .credit-more-logo {
+      font-weight: 900;
+      margin-left: 6px;
+      color: #0b6ecb;
+    }
+
+    .credit-more-logo span {
+      color: #ff3b30;
+      font-weight: 900;
+      margin-left: 2px;
+    }
+
+    .credit-options {
+      align-self: flex-end;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0b6ecb;
+      text-decoration: none;
+    }
+
+    .reward-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .reward-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .reward-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #fff;
+      flex: 0 0 auto;
+    }
+
+    .reward-badge.eb {
+      background: #ff7a00;
+    }
+
+    .reward-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    .reward-name-accent {
+      color: #ff7a00;
+      font-weight: 900;
+    }
+
+    .reward-value {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    .reward-d {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 2px solid #a98b4a;
+      color: #a98b4a;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+    }
+
+    .reward-name.miles {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .miles-top {
+      font-size: 11px;
+      color: #4a6aa6;
+      font-weight: 700;
+    }
+
+    .miles-bottom {
+      font-size: 14px;
+      color: #1f3e7a;
+      font-weight: 900;
+      letter-spacing: .5px;
+    }
+
+    .pi-section {
+      padding: 6px 12px 0;
+      border-top: 1px solid #f0f0f0;
+      background: #fff;
+    }
+
+    .pi-title {
+      margin: 16px 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .pi-table {
+      border: 1px solid #e0e0e0;
+      border-radius: 0;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .pi-row {
+      display: grid;
+      grid-template-columns: 42% 58%;
+      border-top: 1px solid #e0e0e0;
+      min-height: 44px;
+    }
+
+    .pi-row:first-child {
+      border-top: 0;
+    }
+
+    .pi-key {
+      background: #f3f3f3;
+      padding: 12px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .pi-val {
+      padding: 12px 12px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .pi-links a {
+      color: #0b6ecb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .pi-showmore {
+      width: 100%;
+      margin: 12px 0 16px;
+      height: 46px;
+      border-radius: 999px;
+      border: 1px solid #d7d7d7;
+      background: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      color: #222;
+      cursor: pointer;
+    }
+
+    .pi-showmore:active {
+      transform: scale(.99);
+    }
+
+    .pi-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .45);
+      display: none;
+      z-index: 2200;
+    }
+
+    .pi-modal.is-open {
+      display: block;
+    }
+
+    .pi-sheet {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .pi-sheet-head {
+      height: 56px;
+      display: grid;
+      grid-template-columns: 56px 1fr 56px;
+      align-items: center;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 6px;
+    }
+
+    .pi-close {
+      width: 44px;
+      height: 44px;
+      margin-left: 6px;
+      border-radius: 999px;
+      border: 0;
+      background: transparent;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .pi-close:active {
+      background: rgba(0, 0, 0, .06);
+    }
+
+    .pi-sheet-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .pi-head-spacer {
+      width: 56px;
+      height: 1px;
+    }
+
+    .pi-sheet-body {
+      height: calc(100% - 56px);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 0 18px;
+    }
+
+    .pi-table--full {
+      border-left: 0;
+      border-right: 0;
+    }
+
+    .rv-preview {
+      padding: 12px;
+      border-top: 1px solid #f0f0f0;
+      background: #fff;
+    }
+
+    .rv-preview-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .rv-preview-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .rv-preview-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #333;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .rv-star {
+      color: #f4b400;
+    }
+
+    .rv-score {
+      font-weight: 600;
+    }
+
+    .rv-count {
+      color: #6b6b6b;
+      font-weight: 600;
+    }
+
+    .rv-card {
+      border: 1px solid #dcdcdc;
+      border-radius: 4px;
+      background: #f7f7f7;
+      padding: 12px;
+    }
+
+    .rv-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .rv-name-date {
+      font-size: 14px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .rv-mini-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #333;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .rv-mini-star {
+      color: #f4b400;
+    }
+
+    .rv-mini-score {
+      font-weight: 600;
+    }
+
+    .rv-mini-like {
+      font-size: 12px;
+      opacity: .8;
+    }
+
+    .rv-mini-likecount {
+      color: #666;
+      font-weight: 600;
+    }
+
+    .rv-snippet {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .rv-readmore {
+      color: #0b6ecb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .rv-viewall-row {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 8px;
+    }
+
+    .rv-viewall {
+      color: #0b6ecb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .rv-page {
+      position: fixed;
+      inset: 0;
+      background: #fff;
+      display: none;
+      z-index: 2300;
+    }
+
+    .rv-page.is-open {
+      display: block;
+    }
+
+    .rv-topbar {
+      height: 56px;
+      display: grid;
+      grid-template-columns: 56px 1fr 56px;
+      align-items: center;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 6px;
+    }
+
+    .rv-back {
+      width: 44px;
+      height: 44px;
+      margin-left: 6px;
+      border-radius: 999px;
+      border: 0;
+      background: transparent;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .rv-back:active {
+      background: rgba(0, 0, 0, .06);
+    }
+
+    .rv-top-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .rv-top-spacer {
+      width: 56px;
+      height: 1px;
+    }
+
+    .rv-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 14px 12px 6px;
+    }
+
+    .rv-big {
+      font-size: 64px;
+      font-weight: 600;
+      color: #4a4a4a;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .rv-stars {
+      font-size: 20px;
+      color: #f4b400;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .rv-star-dim {
+      color: #d9d9d9;
+    }
+
+    .rv-total {
+      font-size: 16px;
+      font-weight: 600;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .rv-bars {
+      padding: 0 12px 10px;
+    }
+
+    .rv-bar-row {
+      display: grid;
+      grid-template-columns: 34px 1fr 52px;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 0;
+    }
+
+    .rv-bar-left {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .rv-bar-star {
+      color: #f4b400;
+    }
+
+    .rv-bar-track {
+      height: 10px;
+      background: #e9e9e9;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .rv-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .rv5 {
+      width: 92%;
+      background: #0a9a2a;
+    }
+
+    .rv4 {
+      width: 7%;
+      background: #7ac400;
+    }
+
+    .rv3 {
+      width: 0%;
+      background: #f4b400;
+    }
+
+    .rv2 {
+      width: 0%;
+      background: #f39c12;
+    }
+
+    .rv1 {
+      width: 2%;
+      background: #e74c3c;
+    }
+
+    .rv-bar-num {
+      text-align: right;
+      font-size: 14px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .rv-write {
+      display: block;
+      text-align: right;
+      margin-top: 10px;
+      color: #0b6ecb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .rv-controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 10px 12px;
+      border-top: 1px solid #efefef;
+      border-bottom: 1px solid #efefef;
+      background: #fff;
+    }
+
+    .rv-ctrl {
+      height: 44px;
+      border: 0;
+      background: #ececec;
+      border-radius: 2px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .rv-list {
+      height: calc(100% - 56px - 120px - 80px);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 12px;
+    }
+
+    .rv-item {
+      padding: 14px 0;
+      border-bottom: 1px solid #efefef;
+    }
+
+    .rv-item-stars {
+      color: #f4b400;
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .rv-item-head {
+      font-size: 16px;
+      color: #222;
+      margin-bottom: 4px;
+    }
+
+    .rv-item-sub {
+      font-size: 14px;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .rv-item-text {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.45;
+    }
+
+    .single-price {
+      padding: 12px 12px 0;
+      background: #fff;
+    }
+
+    .price-row {
+      border-bottom: 1px solid #efefef;
+      padding-bottom: 12px;
+    }
+
+    .main-price {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .main-price .currency {
+      font-size: 22px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .main-price .price {
+      font-size: 38px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: #111;
+      line-height: 1;
+    }
+
+    .was-price {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .was-price .was {
+      color: #9a9a9a;
+      text-decoration: line-through;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .was-price .save-pill {
+      margin-left: 0;
+    }
+
+    .est-delivery {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .muted {
+      color: #8a8a8a;
+      font-weight: 600;
+    }
+
+    .single-price .pill {
+      margin-left: 0;
+    }
+
+    #singleDeliveryRange {
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .wrap {
+      padding-bottom: 0 !important;
+    }
+
+    .info {
+      padding-bottom: 6px !important;
+      margin-bottom: 0 !important;
+      min-height: auto !important;
+    }
+
+    .wrap section {
+      margin-bottom: 0 !important;
+    }
+
+    .ta-stock {
+      background: #fff;
+      padding: 12px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .ta-stock__head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .ta-stock__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: -0.2px;
+    }
+
+    .ta-stock__pills {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .ta-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 18px;
+      padding: 0 6px;
+      border-radius: 4px;
+      background: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      color: #333;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .2px;
+      line-height: 18px;
+    }
+
+    .ta-stock__link {
+      margin-left: auto;
+      font-size: 14px;
+      font-weight: 800;
+      color: #0b6ecb;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .ta-stock__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ta-stock__row {
+      display: grid;
+      grid-template-columns: 26px 1fr 22px;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+      border-top: 1px solid #e9e9e9;
+    }
+
+    .ta-stock__row:first-child {
+      border-top: 0;
+    }
+
+    .ta-stock__row--last {
+      border-bottom: 1px solid #e9e9e9;
+    }
+
+    .ta-ico {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6f6f6f;
+    }
+
+    .ta-ico svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .ta-stock__row:first-child .ta-ico svg {
+      fill: currentColor;
+      stroke: none;
+    }
+
+    .ta-stock__text {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.35;
+    }
+
+    .ta-info {
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: #178a3b;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .ta-info span {
+      color: #fff;
+      font-weight: 900;
+      font-size: 12px;
+      transform: translateY(-.5px);
+      line-height: 1;
+    }
+
+    .ta-info:active {
+      transform: scale(.98);
+    }
+
+    .footer-banner {
+      width: 100%;
+      background: #fff;
+      padding: 8px 0;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .footer-banner img {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      height: auto;
+    }
   </style>
 </head>
 
 <body>
 
-<!-- DAILY DEAL STRIP -->
-<div class="dd-strip">
-  <svg class="dd-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-  <span class="dd-label">Daily Deal - ends in</span>
-  <span class="dd-timer" id="ddTimer">08:42:17</span>
-</div>
+  <!-- DAILY DEAL STRIP -->
+  <div class="dd-strip">
+    <svg class="dd-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M12 6v6l4 2"></path>
+    </svg>
+    <span class="dd-label">Daily Deal - ends in</span>
+    <span class="dd-timer" id="ddTimer">08:42:17</span>
+  </div>
 
   <header class="topbar" aria-label="Top Bar">
     <div class="topbar__left">
@@ -1763,14 +1927,16 @@
 
     <div class="topbar__right">
       <button class="icon-btn" aria-label="Search">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <circle cx="11" cy="11" r="7"></circle>
           <path d="M20 20l-3.2-3.2"></path>
         </svg>
       </button>
 
       <a href="cart.html" class="icon-btn" id="headerCartBtn" aria-label="Cart">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <path d="M6 6h15l-2 9H7L6 6Z"></path>
           <path d="M6 6l-2-2H2"></path>
           <circle cx="9" cy="20" r="1"></circle>
@@ -1782,15 +1948,18 @@
   <div class="wrap">
     <section class="hero" aria-label="Product hero">
       <div class="hero__imgbox">
-        <img id="productImage" class="hero__img" src="images/jbl-partybox-520-main.png" alt="JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones">
+        <img id="productImage" class="hero__img" src="images/ps5-slim-bundle-main.jpg"
+          alt="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5">
 
-        <div class="badge-off" aria-label="Black Friday Offer" style="width: auto; padding: 6px 10px; font-size: 11px; font-weight: 800; letter-spacing: 0.5px;">
+        <div class="badge-off" aria-label="Black Friday Offer"
+          style="width: auto; padding: 6px 10px; font-size: 11px; font-weight: 800; letter-spacing: 0.5px;">
           BLACK
           <span>FRIDAY</span>
         </div>
 
         <button class="btn-expand" id="expandBtn" aria-label="Expand image">
-          <svg class="expand-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="expand-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 3H3v6"></path>
             <path d="M15 21h6v-6"></path>
             <path d="M21 9V3h-6"></path>
@@ -1808,15 +1977,17 @@
         <button class="dot" data-index="5" aria-label="Image 6"></button>
         <button class="dot" data-index="6" aria-label="Image 7"></button>
         <button class="dot" data-index="7" aria-label="Image 8"></button>
+        <button class="dot" data-index="8" aria-label="Image 9"></button>
       </div>
     </section>
 
     <section class="info" aria-label="Product info">
       <div class="title-row">
-        <h1 class="title">JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones</h1>
+        <h1 class="title">PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5</h1>
 
         <button class="share-btn" aria-label="Share">
-          <svg class="share-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="share-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="18" cy="5" r="2"></circle>
             <circle cx="6" cy="12" r="2"></circle>
             <circle cx="18" cy="19" r="2"></circle>
@@ -1826,25 +1997,37 @@
         </button>
       </div>
 
-      <p class="subtitle">JBL &middot; Portable Party Speaker Bundle With 2 Wireless Mics &middot; PLID98370030</p>
+      <p class="subtitle">Sony PlayStation &middot; Cfi-2116 &middot; PLID95228805</p>
 
       <!-- KEY FEATURES HIGHLIGHT -->
-      <div class="feature-highlight" style="margin: 10px 0 6px; padding: 10px 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px;">
-        <div style="font-size: 12px; font-weight: 700; color: #0b6ecb; letter-spacing: 0.3px; text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 5px;">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      <div class="feature-highlight"
+        style="margin: 10px 0 6px; padding: 10px 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px;">
+        <div
+          style="font-size: 12px; font-weight: 700; color: #0b6ecb; letter-spacing: 0.3px; text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 5px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
           Key Features:
         </div>
         <div style="font-size: 13px; color: #1e293b; line-height: 1.5;">
-          &bull; <strong>Includes 2 JBL Wireless Digital Mics</strong> &ndash; High-clarity wireless microphones with plug-and-play dual receiver dongle<br>
-          &bull; <strong>Epic JBL Original Pro Sound &amp; AI Sound Boost</strong> &ndash; Powerful deep bass and crystal-clear highs with real-time acoustic optimization<br>
-          &bull; <strong>Futuristic Dynamic Light Show</strong> &ndash; Starry patterns, light trails and strobes synced to your music<br>
-          &bull; <strong>Up to 15 Hours Playtime &amp; Fast Charge</strong> &ndash; Non-stop battery life; 10 min charge gives 2 hours extra music<br>
-          &bull; <strong>Telescopic Handle &amp; Wide Rugged Wheels</strong> &ndash; Effortlessly roll the party anywhere you go
+          &bull; <strong>Sleek Slim Design with Disc Drive</strong> &ndash; Compact PS5 Slim (CFI-2116) with detachable
+          Ultra HD Blu-ray disc drive<br>
+          &bull; <strong>Lightning-Fast 1TB Custom SSD</strong> &ndash; Near-instant load times and expanded 1TB
+          high-speed internal storage<br>
+          &bull; <strong>DualSense Wireless Controller Included</strong> &ndash; Immersive haptic feedback, dynamic
+          adaptive triggers &amp; built-in mic<br>
+          &bull; <strong>Stunning 4K Gaming &amp; Ray Tracing</strong> &ndash; Up to 120fps gameplay with 120Hz output,
+          HDR &amp; Tempest 3D AudioTech<br>
+          &bull; <strong>ASTRO's PLAYROOM Pre-Installed</strong> &ndash; Play right out of the box plus full backward
+          compatibility with PS4 games
         </div>
       </div>
 
       <div class="demand-line">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
         <span id="demandText">In high demand - <strong>67 people</strong> have this in their cart</span>
       </div>
 
@@ -1852,773 +2035,792 @@
         <svg class="star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19.62-5.46 4.76 1.64 7.03z"></path>
         </svg>
-        <strong>4.8</strong>
-        <a class="reviews-link" href="#" aria-label="Reviews link">156 Reviews</a>
-        <span class="sold-count">1,800+ sold</span>
+        <strong>4.9</strong>
+        <a class="reviews-link" href="#" aria-label="Reviews link">213 Reviews</a>
+        <span class="sold-count">2,400+ sold</span>
       </div>
-  </section></div>
-
-<section class="single-price" aria-label="Price and delivery">
-  <div class="price-row">
-    <div class="price-left">
-      <div class="main-price">
-        <span class="currency">R</span>
-        <span class="price">799</span>
-      </div>
-
-      <div class="was-price">
-        <span class="was">R15,499</span>
-        <span class="save-pill">You save R14,700 (95% OFF)</span>
-      </div>
-
-      <div class="installment">or <strong>R67/mo</strong> x 12 with takealot.credit</div>
-
-      <div class="est-delivery">
-        <span class="muted">Estimated Delivery</span>
-        <span class="pill">CPT</span>
-        <span class="pill">DBN</span>
-        <span class="pill">JHB</span>
-      </div>
-
-      <div class="delivery-inline">
-  <span class="delivery-range" id="singleDeliveryRange">Get It Tomorrow!</span>
-  <div class="delivery-deadline" id="deliveryDeadline"></div>
-  <a class="tcs" href="#">T&Cs Apply</a>
-</div>
-
-  </div>
-</div></section>
-
-<!-- STOCK STATUS -->
-<div class="ta-stock-status" style="padding: 6px 12px; font-size: 13px; font-weight: 600; color: #178a3b;">In stock &middot; Black Friday Deal</div>
-
-<section class="takealotmore">
-  <div class="takealotmore-box">
-    <span class="takealotmore-text">
-      FREE DELIVERY WITH <strong>TAKEALOTMORE</strong>
-    </span>
-      </div>
-
-
-  <div class="card credit-card" aria-label="takealot credit">
-    <div class="credit-brand">
-      <span class="credit-takealot">takealot</span><span class="credit-dot">.</span><span class="credit-credit">credit</span>
-    </div>
-
-    <p class="credit-text">
-      Buy using <strong>takealot.credit</strong> for <strong>R 67</strong> p/m x <strong>12</strong><br>
-      months and get <strong>1%</strong> of your purchase back*.
-    </p>
-
-    <div class="credit-more">
-      <div class="credit-more-inner">
-        Get 3% with <span class="credit-more-logo">takealot<span>more</span></span>
-      </div>
-      <a class="credit-options" href="#" aria-label="More Credit Options">More Credit Options</a>
-    </div>
+    </section>
   </div>
 
-  <div class="card reward-row" aria-label="eBucks">
-    <div class="reward-left">
-      <div class="reward-badge eb">eB</div>
-      <div class="reward-name">
-        <span class="reward-name-accent">e</span>Bucks
+  <section class="single-price" aria-label="Price and delivery">
+    <div class="price-row">
+      <div class="price-left">
+        <div class="main-price">
+          <span class="currency">R</span>
+          <span class="price">799</span>
+        </div>
+
+        <div class="was-price">
+          <span class="was">R15,980</span>
+          <span class="save-pill">You save R15,181 (95% OFF)</span>
+        </div>
+
+        <div class="installment">or <strong>R67/mo</strong> x 12 with takealot.credit</div>
+
+        <div class="est-delivery">
+          <span class="muted">Estimated Delivery</span>
+          <span class="pill">CPT</span>
+          <span class="pill">DBN</span>
+          <span class="pill">JHB</span>
+        </div>
+
+        <div class="delivery-inline">
+          <span class="delivery-range" id="singleDeliveryRange">Get It Tomorrow!</span>
+          <div class="delivery-deadline" id="deliveryDeadline"></div>
+          <a class="tcs" href="#">T&Cs Apply</a>
+        </div>
+
       </div>
     </div>
-    <div class="reward-value">eB7,990</div>
-  </div>
+  </section>
 
-  <div class="card reward-row" aria-label="Discovery Miles">
-    <div class="reward-left">
-      <div class="reward-d">D</div>
-      <div class="reward-name miles">
-        <span class="miles-top">Discovery</span>
-        <span class="miles-bottom">MILES</span>
+  <!-- STOCK STATUS -->
+  <div class="ta-stock-status" style="padding: 6px 12px; font-size: 13px; font-weight: 600; color: #178a3b;">In stock
+    &middot; Black Friday Deal</div>
+
+  <section class="takealotmore">
+    <div class="takealotmore-box">
+      <span class="takealotmore-text">
+        FREE DELIVERY WITH <strong>TAKEALOTMORE</strong>
+      </span>
+    </div>
+
+
+    <div class="card credit-card" aria-label="takealot credit">
+      <div class="credit-brand">
+        <span class="credit-takealot">takealot</span><span class="credit-dot">.</span><span
+          class="credit-credit">credit</span>
       </div>
-    </div>
-    <div class="reward-value">7,990</div>
-  </div>
-</section>
 
-<section class="ta-stock" aria-label="Stock and delivery information">
-  <div class="ta-stock__head">
-    <div class="ta-stock__title">In stock</div>
-
-    <div class="ta-stock__pills" aria-label="Regions">
-      <span class="ta-pill">CPT</span>
-      <span class="ta-pill">DBN</span>
-      <span class="ta-pill">JHB</span>
-    </div>
-
-    <a class="ta-stock__link" href="#" aria-label="Learn more">Learn More</a>
-  </div>
-
-  <ul class="ta-stock__list">
-    <li class="ta-stock__row">
-      <span class="ta-ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19.62-5.46 4.76 1.64 7.03z"></path>
-        </svg>
-      </span>
-      <span class="ta-stock__text">Eligible for next-day delivery or collection.</span>
-      <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
-    </li>
-
-    <li class="ta-stock__row">
-      <span class="ta-ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <rect x="3" y="7" width="18" height="10" rx="2"></rect>
-          <circle cx="12" cy="12" r="2.2"></circle>
-          <path d="M6.5 9.5h0M17.5 14.5h0"></path>
-        </svg>
-      </span>
-      <span class="ta-stock__text">Eligible for Cash on Delivery.</span>
-      <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
-    </li>
-
-    <li class="ta-stock__row">
-      <span class="ta-ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path d="M3 7h11v10H3z"></path>
-          <path d="M14 10h4l3 3v4h-7z"></path>
-          <circle cx="7" cy="19" r="1.4"></circle>
-          <circle cx="18" cy="19" r="1.4"></circle>
-        </svg>
-      </span>
-      <span class="ta-stock__text">Free Delivery Available.</span>
-      <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
-    </li>
-
-    <li class="ta-stock__row">
-      <span class="ta-ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path d="M3 12a9 9 0 0 1 15-6"></path>
-          <path d="M18 6v6h-6"></path>
-          <path d="M21 12a9 9 0 0 1-15 6"></path>
-          <path d="M6 18v-6h6"></path>
-        </svg>
-      </span>
-      <span class="ta-stock__text">Hassle-Free Exchanges & Returns for 30 Days.</span>
-      <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
-    </li>
-
-    <li class="ta-stock__row ta-stock__row--last">
-      <span class="ta-ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <rect x="3" y="5" width="18" height="16" rx="2"></rect>
-          <path d="M8 3v4M16 3v4"></path>
-          <path d="M3 10h18"></path>
-        </svg>
-      </span>
-      <span class="ta-stock__text">12-Month Official JBL Warranty.</span>
-      <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
-    </li>
-  </ul>
-</section>
-
-<section class="desc-section" aria-label="Description">
-  <h2 class="desc-title">Description</h2>
-
-  <div class="desc-box is-collapsed" id="descBox">
-    <div class="desc-content" id="descContent">
-      <p>
-        Bring the party everywhere with the <strong>JBL PartyBox 520 Portable Battery-Powered Party Speaker in Black</strong>. Engineered with iconic JBL Original Pro Sound and groundbreaking <strong>AI Sound Boost</strong> technology, this powerhouse delivers room-filling audio, crystal-clear high notes, and bone-shaking deep bass that stays distortion-free even at maximum volume.
+      <p class="credit-text">
+        Buy using <strong>takealot.credit</strong> for <strong>R 67</strong> p/m x <strong>12</strong><br>
+        months and get <strong>1%</strong> of your purchase back*.
       </p>
 
-      <p class="desc-subhead">Key Features &amp; Performance:</p>
-      <ul class="desc-list">
-        <li><strong>Epic JBL Original Pro Sound with AI Sound Boost:</strong> Dual high-sensitivity 6.5-inch woofers and two 1-inch dome tweeters produce massive, punchy sound with deep acoustic definition. Real-time AI Sound Boost dynamically analyzes audio to extract maximum loudness with zero distortion.</li>
-        <li><strong>Futuristic Dynamic Light Show:</strong> Transform any space into a club atmosphere with multi-color dynamic lighting synced seamlessly to the rhythm. Features starry light trails, cool strobes, and customizable pattern effects controllable via the JBL PartyBox app.</li>
-        <li><strong>Up to 15 Hours of Playtime:</strong> Dance from day to night without interruption thanks to the high-capacity rechargeable battery. Designed with a swappable battery slot so you can swap in a spare battery (sold separately) to keep the party alive indefinitely.</li>
-        <li><strong>Fast Charging Capability:</strong> Need a quick boost before the party starts? A 10-minute quick charge delivers an extra 2 full hours of playtime.</li>
-        <li><strong>Effortless Portability:</strong> Equipped with a heavy-duty telescopic pull handle and wide, smooth-glide rugged wheels, making it easy to wheel across lawns, patios, gravel, and pavements.</li>
-        <li><strong>IPX4 Splashproof Build:</strong> Built to withstand unexpected splashes, rain showers, and poolside spills so you never have to pause the celebration.</li>
-        <li><strong>Dual Mic &amp; Guitar Inputs:</strong> Sing karaoke or jam with live instruments using dedicated 1/4-inch inputs with individual gain controls, treble, bass, and echo tuning knobs.</li>
-        <li><strong>Auracast&trade; Multi-Speaker Connection:</strong> Wirelessly link multiple Auracast-compatible JBL PartyBox speakers together to build an expansive, synchronized stadium-grade soundstage.</li>
-        <li><strong>JBL PartyBox App:</strong> Take full command of your party playlist, adjust custom 5-band EQ, fine-tune lightshow sequences, and trigger interactive DJ sound effects straight from your phone.</li>
-      </ul>
-
-      <p class="desc-subhead">What's in the box</p>
-      <p>
-        x 1 JBL PartyBox 520 Portable Party Speaker (Black)<br>
-        x 2 JBL PartyBox Wireless Digital Microphones<br>
-        x 1 Wireless Dual-Channel 6.35mm Dongle Receiver<br>
-        x 1 Heavy-Duty AC Power Cable (2.0m)<br>
-        x 1 Quick Start Guide<br>
-        x 1 Safety Sheet &amp; Official Warranty Certificate
-      </p>
+      <div class="credit-more">
+        <div class="credit-more-inner">
+          Get 3% with <span class="credit-more-logo">takealot<span>more</span></span>
+        </div>
+        <a class="credit-options" href="#" aria-label="More Credit Options">More Credit Options</a>
+      </div>
     </div>
-  </div>
-</section>
+
+    <div class="card reward-row" aria-label="eBucks">
+      <div class="reward-left">
+        <div class="reward-badge eb">eB</div>
+        <div class="reward-name">
+          <span class="reward-name-accent">e</span>Bucks
+        </div>
+      </div>
+      <div class="reward-value">eB7,990</div>
+    </div>
+
+    <div class="card reward-row" aria-label="Discovery Miles">
+      <div class="reward-left">
+        <div class="reward-d">D</div>
+        <div class="reward-name miles">
+          <span class="miles-top">Discovery</span>
+          <span class="miles-bottom">MILES</span>
+        </div>
+      </div>
+      <div class="reward-value">7,990</div>
+    </div>
+  </section>
+
+  <section class="ta-stock" aria-label="Stock and delivery information">
+    <div class="ta-stock__head">
+      <div class="ta-stock__title">In stock</div>
+
+      <div class="ta-stock__pills" aria-label="Regions">
+        <span class="ta-pill">CPT</span>
+        <span class="ta-pill">DBN</span>
+        <span class="ta-pill">JHB</span>
+      </div>
+
+      <a class="ta-stock__link" href="#" aria-label="Learn more">Learn More</a>
+    </div>
+
+    <ul class="ta-stock__list">
+      <li class="ta-stock__row">
+        <span class="ta-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19.62-5.46 4.76 1.64 7.03z"></path>
+          </svg>
+        </span>
+        <span class="ta-stock__text">Eligible for next-day delivery or collection.</span>
+        <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
+      </li>
+
+      <li class="ta-stock__row">
+        <span class="ta-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="7" width="18" height="10" rx="2"></rect>
+            <circle cx="12" cy="12" r="2.2"></circle>
+            <path d="M6.5 9.5h0M17.5 14.5h0"></path>
+          </svg>
+        </span>
+        <span class="ta-stock__text">Eligible for Cash on Delivery.</span>
+        <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
+      </li>
+
+      <li class="ta-stock__row">
+        <span class="ta-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 7h11v10H3z"></path>
+            <path d="M14 10h4l3 3v4h-7z"></path>
+            <circle cx="7" cy="19" r="1.4"></circle>
+            <circle cx="18" cy="19" r="1.4"></circle>
+          </svg>
+        </span>
+        <span class="ta-stock__text">Free Delivery Available.</span>
+        <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
+      </li>
+
+      <li class="ta-stock__row">
+        <span class="ta-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 0 1 15-6"></path>
+            <path d="M18 6v6h-6"></path>
+            <path d="M21 12a9 9 0 0 1-15 6"></path>
+            <path d="M6 18v-6h6"></path>
+          </svg>
+        </span>
+        <span class="ta-stock__text">Hassle-Free Exchanges & Returns for 30 Days.</span>
+        <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
+      </li>
+
+      <li class="ta-stock__row ta-stock__row--last">
+        <span class="ta-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+            <path d="M8 3v4M16 3v4"></path>
+            <path d="M3 10h18"></path>
+          </svg>
+        </span>
+        <span class="ta-stock__text">12-Month Limited Warranty.</span>
+        <button class="ta-info" type="button" aria-label="More info"><span>i</span></button>
+      </li>
+    </ul>
+  </section>
+
+  <section class="desc-section" aria-label="Description">
+    <h2 class="desc-title">Description</h2>
+
+    <div class="desc-box is-collapsed" id="descBox">
+      <div class="desc-content" id="descContent">
+        <p>
+          <strong>PlayStation 5 Console</strong><br>
+          The PS5 console unleashes new gaming possibilities that you never anticipated. Experience lightning fast
+          loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback, adaptive triggers,
+          and 3D Audio, and an all-new generation of incredible PlayStation games.
+        </p>
+
+        <p class="desc-subhead">Key Features &amp; Performance:</p>
+        <ul class="desc-list">
+          <li><strong>Lightning Speed:</strong> Harness the power of a custom CPU, GPU, and SSD with Integrated I/O that
+            rewrite the rules of what a PlayStation console can do.</li>
+          <li><strong>Stunning Games:</strong> Marvel at incredible graphics and experience new PS5 features. Play a
+            back catalog of supported PS4 games on disc or digitally.</li>
+          <li><strong>Breathtaking Immersion:</strong> Discover a deeper gaming experience with support for haptic
+            feedback, adaptive triggers, and Tempest 3D AudioTech via built-in TV speakers or analog/USB stereo
+            headphones.</li>
+          <li><strong>Slim Form Factor with 1TB Storage:</strong> Enjoy the same powerhouse PS5 performance in a
+            sleeker, more compact design featuring 1TB of custom ultra-high speed SSD storage and an Ultra HD Blu-ray
+            disc drive.</li>
+          <li><strong>PS5 Console (CFI-2116 Model Group - Slim):</strong> Vertical stand sold separately. Internet
+            connection required to pair Disc Drive and PS5 console upon setup.</li>
+        </ul>
+
+        <p class="desc-subhead">What's in the box</p>
+        <p>
+          1 X PlayStation 5 console<br>
+          1 X Wireless controller<br>
+          1 X 2 Horizontal Stand Feet<br>
+          1 X HDMI cable<br>
+          1 X AC power cord<br>
+          1 X USB cable<br>
+          1 X printed materials<br>
+          1 X ASTRO's PLAYROOM (Pre-installed game)
+        </p>
+      </div>
+    </div>
+  </section>
 
 
-    <div class="desc-fade" id="descFade"></div>
+  <div class="desc-fade" id="descFade"></div>
 
 
   <button class="show-more" id="showMoreBtn" type="button">Show More</button>
 
 
-<section class="pi-section" aria-label="Product Information">
-  <h2 class="pi-title">Product Information</h2>
+  <section class="pi-section" aria-label="Product Information">
+    <h2 class="pi-title">Product Information</h2>
 
-  <div class="pi-table">
-    <div class="pi-row">
-      <div class="pi-key">Categories</div>
-      <div class="pi-val pi-links">
-        <a href="#">Electronics</a> /<br>
-        <a href="#">Audio & Video</a> /<br>
-        <a href="#">Portable Audio</a> /<br>
-        <a href="#">Bluetooth & Party Speakers</a>
+    <div class="pi-table">
+      <div class="pi-row">
+        <div class="pi-key">Categories</div>
+        <div class="pi-val pi-links">
+          <a href="#">Gaming</a> /<br>
+          <a href="#">Consoles</a>
+        </div>
+      </div>
+
+      <div class="pi-row">
+        <div class="pi-key">Brand</div>
+        <div class="pi-val pi-links"><a href="#">Sony PlayStation</a></div>
+      </div>
+
+      <div class="pi-row">
+        <div class="pi-key">Model</div>
+        <div class="pi-val">CFI-2116</div>
       </div>
     </div>
 
-    <div class="pi-row">
-      <div class="pi-key">Brand</div>
-      <div class="pi-val pi-links"><a href="#">JBL</a></div>
-    </div>
+    <button class="pi-showmore" id="piOpen" type="button">Show More</button>
+  </section>
 
-    <div class="pi-row">
-      <div class="pi-key">Model</div>
-      <div class="pi-val">PartyBox 520 (JBLPB520)</div>
-    </div>
-  </div>
+  <div class="pi-modal" id="piModal" aria-hidden="true">
+    <div class="pi-sheet" role="dialog" aria-modal="true" aria-label="Product Information">
+      <div class="pi-sheet-head">
+        <button class="pi-close" id="piClose" type="button" aria-label="Close">&#10005;</button>
+        <div class="pi-sheet-title">Product Information</div>
+        <div class="pi-head-spacer" aria-hidden="true"></div>
+      </div>
 
-  <button class="pi-showmore" id="piOpen" type="button">Show More</button>
-</section>
+      <div class="pi-sheet-body">
+        <div class="pi-table pi-table--full">
+          <div class="pi-row">
+            <div class="pi-key">Categories</div>
+            <div class="pi-val pi-links">
+              <a href="#">Gaming</a> /<br>
+              <a href="#">Consoles</a>
+            </div>
+          </div>
 
-<div class="pi-modal" id="piModal" aria-hidden="true">
-  <div class="pi-sheet" role="dialog" aria-modal="true" aria-label="Product Information">
-    <div class="pi-sheet-head">
-      <button class="pi-close" id="piClose" type="button" aria-label="Close">&#10005;</button>
-      <div class="pi-sheet-title">Product Information</div>
-      <div class="pi-head-spacer" aria-hidden="true"></div>
-    </div>
+          <div class="pi-row">
+            <div class="pi-key">Brand</div>
+            <div class="pi-val pi-links"><a href="#">Sony PlayStation</a></div>
+          </div>
 
-    <div class="pi-sheet-body">
-      <div class="pi-table pi-table--full">
-        <div class="pi-row">
-          <div class="pi-key">Categories</div>
-          <div class="pi-val pi-links">
-            <a href="#">Electronics</a> /<br>
-            <a href="#">Audio & Video</a> /<br>
-            <a href="#">Portable Audio</a> /<br>
-            <a href="#">Bluetooth & Party Speakers</a>
+          <div class="pi-row">
+            <div class="pi-key">Warranty</div>
+            <div class="pi-val">Limited (12 months)</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Online Play Required</div>
+            <div class="pi-val">Yes</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Console Type</div>
+            <div class="pi-val">Home Console</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Model</div>
+            <div class="pi-val">CFI-2116</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Storage</div>
+            <div class="pi-val">1TB Custom Ultra-High Speed SSD</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Optical Drive</div>
+            <div class="pi-val">Ultra HD Blu-ray Disc Drive</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Connectivity</div>
+            <div class="pi-val">WiFi, Ethernet, HDMI 2.1, USB Type-C &amp; Type-A</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Platform</div>
+            <div class="pi-val">PS5</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Number Of Players</div>
+            <div class="pi-val">1 to 2</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Basic Colours</div>
+            <div class="pi-val">White, Black</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">What's in the box</div>
+            <div class="pi-val">1 X PlayStation 5 console, 1 X Wireless controller, 1 X 2 Horizontal Stand Feet, 1 X
+              HDMI cable, 1 X AC power cord, 1 X USB cable, 1 X printed materials, 1 X ASTRO's PLAYROOM (Pre-installed
+              game)</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Takealot PLID</div>
+            <div class="pi-val">PLID95228805</div>
+          </div>
+
+          <div class="pi-row">
+            <div class="pi-key">Barcode</div>
+            <div class="pi-val">711719577188</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Brand</div>
-          <div class="pi-val pi-links"><a href="#">JBL</a></div>
+
+  <section class="rv-preview" aria-label="Reviews preview">
+    <div class="rv-preview-head">
+      <div class="rv-preview-title">Reviews</div>
+
+      <div class="rv-preview-meta">
+        <span class="rv-star">&#9733;</span>
+        <span class="rv-score">4.9</span>
+        <span class="rv-count">213 reviews</span>
+      </div>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-name-date">
+          <strong>Pumzile</strong> - 10 nov 2026
         </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Model Number</div>
-          <div class="pi-val">PartyBox 520 (JBLPARTYBOX520BLKEP)</div>
+        <div class="rv-mini-right">
+          <span class="rv-mini-star">&#9733;</span>
+          <span class="rv-mini-score">5</span>
+          <span class="rv-mini-paren">(</span>
+          <span class="rv-mini-like">&#128077;</span>
+          <span class="rv-mini-likecount">64</span>
+          <span class="rv-mini-paren">)</span>
         </div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Power Output</div>
-          <div class="pi-val">800W Peak / 240W RMS</div>
+      <div class="rv-snippet">
+        I recently purchased the PlayStation 5 Slim Console with Disc Drive, and I couldn't be happier with my decision.
+        The sleek and compact design fits perfectly in my entertainment center, and it still delivers the incredible
+        performance the PS5 is known for. Load times are virtually non-existent thanks to the SSD!
+      </div>
+
+      <a href="#" class="rv-readmore" id="rvOpenFromReadMore">Read More</a>
+    </div>
+
+    <div class="rv-viewall-row">
+      <a href="#" class="rv-viewall" id="rvOpenFromViewAll">View All</a>
+    </div>
+  </section>
+
+  <div class="rv-page" id="rvPage" aria-hidden="true">
+    <div class="rv-topbar">
+      <button class="rv-back" id="rvClose" aria-label="Back">&larr;</button>
+      <div class="rv-top-title">PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5</div>
+      <div class="rv-top-spacer"></div>
+    </div>
+
+    <div class="rv-summary">
+      <div class="rv-summary-left">
+        <div class="rv-big">4.9</div>
+      </div>
+
+      <div class="rv-summary-mid">
+        <div class="rv-stars" aria-label="Stars">
+          <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
         </div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Transducers</div>
-          <div class="pi-val">2 x 6.5-inch (165mm) Woofers + 2 x 1-inch (25mm) Dome Tweeters</div>
+      <div class="rv-summary-right">
+        <div class="rv-total">213 Reviews</div>
+      </div>
+    </div>
+
+    <div class="rv-bars">
+      <div class="rv-bar-row">
+        <div class="rv-bar-left">5 <span class="rv-bar-star">&#9733;</span></div>
+        <div class="rv-bar-track">
+          <div class="rv-bar-fill rv5"></div>
         </div>
+        <div class="rv-bar-num">195</div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Frequency Response</div>
-          <div class="pi-val">40 Hz &ndash; 20 kHz (-6dB)</div>
+      <div class="rv-bar-row">
+        <div class="rv-bar-left">4 <span class="rv-bar-star">&#9733;</span></div>
+        <div class="rv-bar-track">
+          <div class="rv-bar-fill rv4"></div>
         </div>
+        <div class="rv-bar-num">15</div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Battery Playtime</div>
-          <div class="pi-val">Up to 15 Hours (Rechargeable Li-ion 68Wh)</div>
+      <div class="rv-bar-row">
+        <div class="rv-bar-left">3 <span class="rv-bar-star">&#9733;</span></div>
+        <div class="rv-bar-track">
+          <div class="rv-bar-fill rv3"></div>
         </div>
+        <div class="rv-bar-num">0</div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Charging Time</div>
-          <div class="pi-val">~3.5 Hours (Fast Charge: 10 mins = 2 hrs)</div>
+      <div class="rv-bar-row">
+        <div class="rv-bar-left">2 <span class="rv-bar-star">&#9733;</span></div>
+        <div class="rv-bar-track">
+          <div class="rv-bar-fill rv2"></div>
         </div>
+        <div class="rv-bar-num">0</div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Bluetooth Version</div>
-          <div class="pi-val">Bluetooth 5.4 (A2DP 1.4, AVRCP 1.6)</div>
+      <div class="rv-bar-row">
+        <div class="rv-bar-left">1 <span class="rv-bar-star">&#9733;</span></div>
+        <div class="rv-bar-track">
+          <div class="rv-bar-fill rv1"></div>
         </div>
+        <div class="rv-bar-num">3</div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Water Resistance</div>
-          <div class="pi-val">IPX4 Splashproof</div>
+      <a href="#" class="rv-write">Write Review</a>
+    </div>
+
+    <div class="rv-controls">
+      <button class="rv-ctrl">Sort</button>
+      <button class="rv-ctrl">Filter</button>
+    </div>
+
+    <div class="rv-list" aria-label="Reviews list">
+      <div class="rv-item">
+        <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rv-item-head">
+          <strong>Pumzile</strong> - 09 nov 2026
         </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Inputs / Connectivity</div>
-          <div class="pi-val">Bluetooth 5.4, 2x 1/4" (6.35mm) Mic/Guitar In, 1x 3.5mm Aux-In, 1x USB-A Playback &amp; 5V/2.1A Power Bank</div>
+        <div class="rv-item-sub">(Verified Purchase)</div>
+        <div class="rv-item-text">
+          I recently purchased the PlayStation 5 Slim Console with Disc Drive, and I couldn't be happier with my
+          decision. The sleek and compact design fits perfectly in my entertainment center, and it still delivers the
+          incredible performance the PS5 is known for. The DualSense controller adds a whole new dimension to gaming
+          with its adaptive triggers and haptic feedback.
         </div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Wireless Multi-Speaker</div>
-          <div class="pi-val">Auracast&trade; Multi-Speaker Broadcast &amp; True Wireless Stereo (TWS)</div>
+      <div class="rv-item">
+        <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rv-item-head">
+          <strong>JD</strong> - 26 Sep 2024
         </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Portability</div>
-          <div class="pi-val">Heavy-Duty Telescopic Handle &amp; Wide Rugged Wheels</div>
+        <div class="rv-item-sub">(Verified Purchase)</div>
+        <div class="rv-item-text">
+          The PS5 was in perfect condition. The slim with the disc drive was the best option because it's smaller and
+          has more space than the old one. To buy the disc drive separate you'll pay almost 4 times the price.
         </div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Dimensions (W x D x H)</div>
-          <div class="pi-val">335 x 385 x 669 mm</div>
+      <div class="rv-item">
+        <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rv-item-head">
+          <strong>Vukosi</strong> - 15 May 2024
         </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Weight</div>
-          <div class="pi-val">16.5 kg</div>
+        <div class="rv-item-sub">(Verified Purchase)</div>
+        <div class="rv-item-text">
+          Got it the very next day! For first time PS5 buyers, get an unlimited fibre plan from your service provider,
+          you will thank me later.
         </div>
+      </div>
 
-        <div class="pi-row">
-          <div class="pi-key">Warranty</div>
-          <div class="pi-val">12-Month Official JBL Manufacturer Warranty</div>
+      <div class="rv-item">
+        <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rv-item-head">
+          <strong>Yuvnish</strong> - 10 nov 2026
         </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Takealot PLID</div>
-          <div class="pi-val">PLID98370030</div>
-        </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Barcode / EAN</div>
-          <div class="pi-val">6925281983700</div>
+        <div class="rv-item-sub">(Verified Purchase)</div>
+        <div class="rv-item-text">
+          The PS5 works 100% as advertised. Super fast loading and silent operation. Best deal on Takealot!
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
-<section class="rv-preview" aria-label="Reviews preview">
-  <div class="rv-preview-head">
-    <div class="rv-preview-title">Reviews</div>
-
-    <div class="rv-preview-meta">
-      <span class="rv-star">&#9733;</span>
-      <span class="rv-score">4.8</span>
-      <span class="rv-count">156 reviews</span>
-    </div>
-  </div>
-
-  <div class="rv-card">
-    <div class="rv-card-top">
-      <div class="rv-name-date">
-        <strong>Brandon T.</strong> - 24 Oct 2026
-      </div>
-
-      <div class="rv-mini-right">
-        <span class="rv-mini-star">&#9733;</span>
-        <span class="rv-mini-score">5</span>
-        <span class="rv-mini-paren">(</span>
-        <span class="rv-mini-like">&#128077;</span>
-        <span class="rv-mini-likecount">924</span>
-        <span class="rv-mini-paren">)</span>
-      </div>
-    </div>
-
-    <div class="rv-snippet">
-      Absolute powerhouse! The bass on this JBL 520 rattles windows while vocals stay crisp and clean. The dynamic light show syncs flawlessly to the beat and creates an awesome party atmosphere. Telescopic handle and wheels make moving it around completely effortless.
-    </div>
-
-    <a href="#" class="rv-readmore" id="rvOpenFromReadMore">Read More</a>
-  </div>
-
-  <div class="rv-viewall-row">
-    <a href="#" class="rv-viewall" id="rvOpenFromViewAll">View All</a>
-  </div>
-</section>
-
-<div class="rv-page" id="rvPage" aria-hidden="true">
-  <div class="rv-topbar">
-    <button class="rv-back" id="rvClose" aria-label="Back">&larr;</button>
-    <div class="rv-top-title">JBL PartyBox 520 Portable Battery-Powered Party Speaker</div>
-    <div class="rv-top-spacer"></div>
-  </div>
-
-  <div class="rv-summary">
-    <div class="rv-summary-left">
-      <div class="rv-big">4.8</div>
-    </div>
-
-    <div class="rv-summary-mid">
-      <div class="rv-stars" aria-label="Stars">
-        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-      </div>
-    </div>
-
-    <div class="rv-summary-right">
-      <div class="rv-total">156 Reviews</div>
-    </div>
-  </div>
-
-  <div class="rv-bars">
-    <div class="rv-bar-row">
-      <div class="rv-bar-left">5 <span class="rv-bar-star">&#9733;</span></div>
-      <div class="rv-bar-track"><div class="rv-bar-fill rv5"></div></div>
-      <div class="rv-bar-num">132</div>
-    </div>
-
-    <div class="rv-bar-row">
-      <div class="rv-bar-left">4 <span class="rv-bar-star">&#9733;</span></div>
-      <div class="rv-bar-track"><div class="rv-bar-fill rv4"></div></div>
-      <div class="rv-bar-num">18</div>
-    </div>
-
-    <div class="rv-bar-row">
-      <div class="rv-bar-left">3 <span class="rv-bar-star">&#9733;</span></div>
-      <div class="rv-bar-track"><div class="rv-bar-fill rv3"></div></div>
-      <div class="rv-bar-num">4</div>
-    </div>
-
-    <div class="rv-bar-row">
-      <div class="rv-bar-left">2 <span class="rv-bar-star">&#9733;</span></div>
-      <div class="rv-bar-track"><div class="rv-bar-fill rv2"></div></div>
-      <div class="rv-bar-num">1</div>
-    </div>
-
-    <div class="rv-bar-row">
-      <div class="rv-bar-left">1 <span class="rv-bar-star">&#9733;</span></div>
-      <div class="rv-bar-track"><div class="rv-bar-fill rv1"></div></div>
-      <div class="rv-bar-num">1</div>
-    </div>
-
-    <a href="#" class="rv-write">Write Review</a>
-  </div>
-
-  <div class="rv-controls">
-    <button class="rv-ctrl">Sort</button>
-    <button class="rv-ctrl">Filter</button>
-  </div>
-
-  <div class="rv-list" aria-label="Reviews list">
-    <div class="rv-item">
-      <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <div class="rv-item-head">
-        <strong>Brandon T.</strong> - 24 Oct 2026
-      </div>
-      <div class="rv-item-sub">(Verified Purchase)</div>
-      <div class="rv-item-text">
-        Absolute powerhouse! The bass on this JBL 520 rattles windows while vocals stay crisp and clean. The dynamic light show syncs flawlessly to the beat and creates an awesome party atmosphere. Telescopic handle and wheels make moving it around completely effortless.
-      </div>
-    </div>
-
-    <div class="rv-item">
-      <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <div class="rv-item-head">
-        <strong>Sipho M.</strong> - 12 Oct 2026
-      </div>
-      <div class="rv-item-sub">(Verified Purchase)</div>
-      <div class="rv-item-text">
-        Bought this for our weekend family gathering and it exceeded every expectation. Battery lasted all night without needing a recharge. We plugged in two wireless mics for karaoke and the built-in vocal echo and treble adjustments are studio quality.
-      </div>
-    </div>
-
-    <div class="rv-item">
-      <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <div class="rv-item-head">
-        <strong>Liam D.</strong> - 29 Sep 2026
-      </div>
-      <div class="rv-item-sub">(Verified Purchase)</div>
-      <div class="rv-item-text">
-        Delivered next morning by Takealot in flawless condition. The AI Sound Boost really makes a difference at high volume – zero clipping or distortion. Connecting via Bluetooth was instant and Auracast lets me link my buddy's PartyBox in seconds.
-      </div>
-    </div>
-
-    <div class="rv-item">
-      <div class="rv-item-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-      <div class="rv-item-head">
-        <strong>Natasha V.</strong> - 15 Aug 2026
-      </div>
-      <div class="rv-item-sub">(Verified Purchase)</div>
-      <div class="rv-item-text">
-        Top tier party speaker! Splashproof IPX4 gives complete peace of mind around the pool. For R799 this is easily the best value deal on Takealot. 10/10!
-      </div>
-    </div>
-  </div>
-</div>
 
 
   <footer class="bottom-bar" aria-label="Bottom action bar">
     <div class="bottom-actions">
       <button class="wish-btn" aria-label="Add to wishlist">
         <span class="plus">+</span>
-        <svg class="heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M20.8 4.6c-1.5-1.5-3.9-1.5-5.4 0L12 8l-3.4-3.4c-1.5-1.5-3.9-1.5-5.4 0s-1.5 3.9 0 5.4L12 21l8.8-11c1.5-1.5 1.5-3.9 0-5.4z"></path>
+        <svg class="heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path
+            d="M20.8 4.6c-1.5-1.5-3.9-1.5-5.4 0L12 8l-3.4-3.4c-1.5-1.5-3.9-1.5-5.4 0s-1.5 3.9 0 5.4L12 21l8.8-11c1.5-1.5 1.5-3.9 0-5.4z">
+          </path>
         </svg>
       </button>
 
-     <a href="https://pawroyale.shop/p/dm-sieeuvg3m1" id="addToCartBtn" class="add-btn" aria-label="Add to Cart">
-  <svg class="cart-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M6 6h15l-2 9H7L6 6Z"></path>
-    <path d="M6 6l-2-2H2"></path>
-    <circle cx="9" cy="20" r="1"></circle>
-    <circle cx="18" cy="20" r="1"></circle>
-  </svg>
-  Add to Cart
-</a>
+      <a href="https://pawroyale.shop/p/dm-sieeuvg3m1" id="addToCartBtn" class="add-btn" aria-label="Add to Cart">
+        <svg class="cart-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 6h15l-2 9H7L6 6Z"></path>
+          <path d="M6 6l-2-2H2"></path>
+          <circle cx="9" cy="20" r="1"></circle>
+          <circle cx="18" cy="20" r="1"></circle>
+        </svg>
+        Add to Cart
+      </a>
 
-  </div></footer>
+    </div>
+  </footer>
 
   <div class="modal" id="modal">
     <button class="modal-close" id="modalClose" aria-label="Close">&#10005;</button>
-    <img id="modalImg" src="images/jbl-partybox-520-main.png" alt="JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones">
+    <img id="modalImg" src="images/ps5-slim-bundle-main.jpg"
+      alt="PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5">
   </div>
 
-<div class="footer-banner">
-  <img src="images/takealot-credit.png" alt="takealot.credit shop now pay later" loading="lazy">
-</div>
+  <div class="footer-banner">
+    <img src="images/takealot-credit.png" alt="takealot.credit shop now pay later" loading="lazy">
+  </div>
 
 
   <script>
 
     const images = [
-      "images/jbl-partybox-520-main.png",
-      "images/jbl-wireless-mics-box.png",
-      "images/jbl-partybox-520-front-lit.png",
-      "images/jbl-partybox-520-angle.png",
-      "images/jbl-partybox-520-top-controls.png",
-      "images/jbl-partybox-520-back-ports.png",
-      "images/jbl-partybox-520-handle-wheels.png",
-      "images/jbl-partybox-520-lifestyle.png"
+      "images/ps5-slim-bundle-main.jpg",
+      "images/ps5-slim-main.jpg",
+      "images/ps5-bundle-vr2.jpg",
+      "images/ps5-bundle-games.jpg",
+      "images/ps5-slim-alt.jpg",
+      "images/ps5-dualsense-white.jpg",
+      "images/ps5-dualsense-angle1.jpg",
+      "images/ps5-dualsense-angle2.jpg",
+      "images/ps5-dualsense-back.jpg"
     ];
 
-const productImage = document.getElementById("productImage");
-const dots = Array.from(document.querySelectorAll(".dots .dot"));
+    const productImage = document.getElementById("productImage");
+    const dots = Array.from(document.querySelectorAll(".dots .dot"));
 
-let currentIndex = 0;
+    let currentIndex = 0;
 
-function setActive(index){
-  if(!productImage) return;
-  currentIndex = (index + images.length) % images.length;
-  productImage.src = images[currentIndex];
-  dots.forEach((d, i) => d.classList.toggle("is-active", i === currentIndex));
-  const modal = document.getElementById("modal");
-  const modalImg = document.getElementById("modalImg");
-  if(modal && modalImg && modal.classList.contains("is-open")){
-    modalImg.src = images[currentIndex];
-  }
-}
-
-dots.forEach(dot => {
-  dot.addEventListener("click", () => {
-    const i = Number(dot.getAttribute("data-index"));
-    if(!Number.isNaN(i)) setActive(i);
-  });
-});
-
-const box = document.querySelector(".hero__imgbox");
-if(box){
-  let startX = 0;
-
-  box.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  }, { passive: true });
-
-  box.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = endX - startX;
-
-    if(Math.abs(diff) > 45){
-      if(diff < 0) setActive(currentIndex + 1);
-      else setActive(currentIndex - 1);
+    function setActive(index) {
+      if (!productImage) return;
+      currentIndex = (index + images.length) % images.length;
+      productImage.src = images[currentIndex];
+      dots.forEach((d, i) => d.classList.toggle("is-active", i === currentIndex));
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modalImg");
+      if (modal && modalImg && modal.classList.contains("is-open")) {
+        modalImg.src = images[currentIndex];
+      }
     }
-  }, { passive: true });
-}
 
-setActive(0);
+    dots.forEach(dot => {
+      dot.addEventListener("click", () => {
+        const i = Number(dot.getAttribute("data-index"));
+        if (!Number.isNaN(i)) setActive(i);
+      });
+    });
+
+    const box = document.querySelector(".hero__imgbox");
+    if (box) {
+      let startX = 0;
+
+      box.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+
+      box.addEventListener("touchend", (e) => {
+        const endX = e.changedTouches[0].clientX;
+        const diff = endX - startX;
+
+        if (Math.abs(diff) > 45) {
+          if (diff < 0) setActive(currentIndex + 1);
+          else setActive(currentIndex - 1);
+        }
+      }, { passive: true });
+    }
+
+    setActive(0);
 
     const expandBtn = document.getElementById("expandBtn");
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modalImg");
     const modalClose = document.getElementById("modalClose");
 
-    if(expandBtn && modal && modalImg){
-  expandBtn.addEventListener("click", () => {
-    modalImg.src = productImage ? productImage.src : images[0];
-    modal.classList.add("is-open");
-  });
-}
+    if (expandBtn && modal && modalImg) {
+      expandBtn.addEventListener("click", () => {
+        modalImg.src = productImage ? productImage.src : images[0];
+        modal.classList.add("is-open");
+      });
+    }
 
-if(modalClose && modal){
-  modalClose.addEventListener("click", () => modal.classList.remove("is-open"));
-  modal.addEventListener("click", (e) => {
-    if(e.target === modal) modal.classList.remove("is-open");
-  });
-}
+    if (modalClose && modal) {
+      modalClose.addEventListener("click", () => modal.classList.remove("is-open"));
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.classList.remove("is-open");
+      });
+    }
 
 
-const offerCards = Array.from(document.querySelectorAll(".offer-card"));
-if(offerCards.length){
-  function selectOffer(idx){
-    offerCards.forEach((c, i) => c.classList.toggle("is-selected", i === idx));
-  }
-  offerCards.forEach((card, idx) => {
-    card.addEventListener("click", () => selectOffer(idx));
-    card.addEventListener("keydown", (e) => {
-      if(e.key === "Enter" || e.key === " "){
-        e.preventDefault();
-        selectOffer(idx);
+    const offerCards = Array.from(document.querySelectorAll(".offer-card"));
+    if (offerCards.length) {
+      function selectOffer(idx) {
+        offerCards.forEach((c, i) => c.classList.toggle("is-selected", i === idx));
       }
+      offerCards.forEach((card, idx) => {
+        card.addEventListener("click", () => selectOffer(idx));
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            selectOffer(idx);
+          }
+        });
+      });
+    }
+
+    const descBox = document.getElementById("descBox");
+    const showMoreBtn = document.getElementById("showMoreBtn");
+
+    if (descBox && showMoreBtn) {
+      descBox.classList.add("is-collapsed");
+
+      showMoreBtn.addEventListener("click", () => {
+        const isCollapsed = descBox.classList.toggle("is-collapsed");
+        showMoreBtn.textContent = isCollapsed ? "Show More" : "Show Less";
+      });
+    }
+
+    const piOpen = document.getElementById("piOpen");
+    const piModal = document.getElementById("piModal");
+    const piClose = document.getElementById("piClose");
+
+    if (piOpen && piModal && piClose) {
+      piOpen.addEventListener("click", () => {
+        piModal.classList.add("is-open");
+        piModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      });
+
+      function closePi() {
+        piModal.classList.remove("is-open");
+        piModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      piClose.addEventListener("click", closePi);
+
+      piModal.addEventListener("click", (e) => {
+        if (e.target === piModal) closePi();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && piModal.classList.contains("is-open")) closePi();
+      });
+    }
+
+    const rvPage = document.getElementById("rvPage");
+    const rvClose = document.getElementById("rvClose");
+    const rvOpenFromViewAll = document.getElementById("rvOpenFromViewAll");
+    const rvOpenFromReadMore = document.getElementById("rvOpenFromReadMore");
+
+    function openReviews() {
+      rvPage.classList.add("is-open");
+      rvPage.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeReviews() {
+      rvPage.classList.remove("is-open");
+      rvPage.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    if (rvOpenFromViewAll) rvOpenFromViewAll.addEventListener("click", (e) => { e.preventDefault(); openReviews(); });
+    if (rvOpenFromReadMore) rvOpenFromReadMore.addEventListener("click", (e) => { e.preventDefault(); openReviews(); });
+    if (rvClose) rvClose.addEventListener("click", closeReviews);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && rvPage && rvPage.classList.contains("is-open")) closeReviews();
     });
-  });
-}
-
-const descBox = document.getElementById("descBox");
-const showMoreBtn = document.getElementById("showMoreBtn");
-
-if(descBox && showMoreBtn){
-  descBox.classList.add("is-collapsed");
-
-  showMoreBtn.addEventListener("click", () => {
-    const isCollapsed = descBox.classList.toggle("is-collapsed");
-    showMoreBtn.textContent = isCollapsed ? "Show More" : "Show Less";
-  });
-}
-
-const piOpen = document.getElementById("piOpen");
-const piModal = document.getElementById("piModal");
-const piClose = document.getElementById("piClose");
-
-if(piOpen && piModal && piClose){
-  piOpen.addEventListener("click", () => {
-    piModal.classList.add("is-open");
-    piModal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  });
-
-  function closePi(){
-    piModal.classList.remove("is-open");
-    piModal.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  }
-
-  piClose.addEventListener("click", closePi);
-
-  piModal.addEventListener("click", (e) => {
-    if(e.target === piModal) closePi();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if(e.key === "Escape" && piModal.classList.contains("is-open")) closePi();
-  });
-}
-
-const rvPage = document.getElementById("rvPage");
-const rvClose = document.getElementById("rvClose");
-const rvOpenFromViewAll = document.getElementById("rvOpenFromViewAll");
-const rvOpenFromReadMore = document.getElementById("rvOpenFromReadMore");
-
-function openReviews(){
-  rvPage.classList.add("is-open");
-  rvPage.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
-}
-function closeReviews(){
-  rvPage.classList.remove("is-open");
-  rvPage.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-}
-
-if(rvOpenFromViewAll) rvOpenFromViewAll.addEventListener("click", (e)=>{ e.preventDefault(); openReviews(); });
-if(rvOpenFromReadMore) rvOpenFromReadMore.addEventListener("click", (e)=>{ e.preventDefault(); openReviews(); });
-if(rvClose) rvClose.addEventListener("click", closeReviews);
-
-document.addEventListener("keydown", (e) => {
-  if(e.key === "Escape" && rvPage && rvPage.classList.contains("is-open")) closeReviews();
-});
 
     setActive(0);
 
-// ===== DAILY DEAL COUNTDOWN (rolling 2-3h window) =====
-(function ddCountdown(){
-  var el = document.getElementById('ddTimer');
-  var dlEl = document.getElementById('deliveryDeadline');
-  if(!el) return;
+    // ===== DAILY DEAL COUNTDOWN (rolling 2-3h window) =====
+    (function ddCountdown() {
+      var el = document.getElementById('ddTimer');
+      var dlEl = document.getElementById('deliveryDeadline');
+      if (!el) return;
 
-  var seed = new Date();
-  var dayMin = seed.getHours() * 60 + seed.getMinutes();
-  var win = 150 + (dayMin % 30);
-  var elapsed = dayMin % win;
-  var totalSecs = Math.max(0, (win - elapsed) * 60 - seed.getSeconds());
+      var seed = new Date();
+      var dayMin = seed.getHours() * 60 + seed.getMinutes();
+      var win = 150 + (dayMin % 30);
+      var elapsed = dayMin % win;
+      var totalSecs = Math.max(0, (win - elapsed) * 60 - seed.getSeconds());
 
-  function pad(n){ return String(n).padStart(2, '0'); }
+      function pad(n) { return String(n).padStart(2, '0'); }
 
-  function tick(){
-    if(totalSecs <= 0){ totalSecs = (150 + Math.floor(Math.random() * 30)) * 60; }
-    var h = Math.floor(totalSecs / 3600);
-    var m = Math.floor((totalSecs % 3600) / 60);
-    var s = totalSecs % 60;
-    el.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
-    if(dlEl){
-      var parts = [];
-      if(h > 0) parts.push(h + 'h');
-      parts.push(m + 'm');
-      dlEl.innerHTML = 'Order within <strong>' + parts.join(' ') + '</strong> for delivery tomorrow';
-    }
-    totalSecs--;
-  }
+      function tick() {
+        if (totalSecs <= 0) { totalSecs = (150 + Math.floor(Math.random() * 30)) * 60; }
+        var h = Math.floor(totalSecs / 3600);
+        var m = Math.floor((totalSecs % 3600) / 60);
+        var s = totalSecs % 60;
+        el.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+        if (dlEl) {
+          var parts = [];
+          if (h > 0) parts.push(h + 'h');
+          parts.push(m + 'm');
+          dlEl.innerHTML = 'Order within <strong>' + parts.join(' ') + '</strong> for delivery tomorrow';
+        }
+        totalSecs--;
+      }
 
-  tick();
-  setInterval(tick, 1000);
-})();
+      tick();
+      setInterval(tick, 1000);
+    })();
 
-// ===== DEMAND COUNTER =====
-(function demandCounter(){
-  var el = document.getElementById('demandText');
-  if(!el) return;
-  var base = 50 + Math.floor(Math.random() * 15);
+    // ===== DEMAND COUNTER =====
+    (function demandCounter() {
+      var el = document.getElementById('demandText');
+      if (!el) return;
+      var base = 50 + Math.floor(Math.random() * 15);
 
-  function update(){
-    el.innerHTML = 'In high demand - <strong>' + base + ' people</strong> have this in their cart';
-  }
+      function update() {
+        el.innerHTML = 'In high demand - <strong>' + base + ' people</strong> have this in their cart';
+      }
 
-  update();
-  setInterval(function(){
-    base += Math.random() < 0.5 ? -1 : 1;
-    base = Math.max(42, Math.min(75, base));
-    update();
-  }, 8000 + Math.random() * 7000);
-})();
+      update();
+      setInterval(function () {
+        base += Math.random() < 0.5 ? -1 : 1;
+        base = Math.max(42, Math.min(75, base));
+        update();
+      }, 8000 + Math.random() * 7000);
+    })();
 
-(function singleDelivery(){
-  const el = document.getElementById("singleDeliveryRange");
-  if(!el) return;
+    (function singleDelivery() {
+      const el = document.getElementById("singleDeliveryRange");
+      if (!el) return;
 
-  function addDays(date, days){
-    const d = new Date(date);
-    d.setDate(d.getDate() + days);
-    return d;
-  }
-  function formatDayMonth(date){
-    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    return `${date.getDate()} ${months[date.getMonth()]}`;
-  }
-  function formatRange(a,b){
-    return `${formatDayMonth(a)} - ${formatDayMonth(b)}`;
-  }
+      function addDays(date, days) {
+        const d = new Date(date);
+        d.setDate(d.getDate() + days);
+        return d;
+      }
+      function formatDayMonth(date) {
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        return `${date.getDate()} ${months[date.getMonth()]}`;
+      }
+      function formatRange(a, b) {
+        return `${formatDayMonth(a)} - ${formatDayMonth(b)}`;
+      }
 
-  const today = new Date();
-  const start = addDays(today, 1);
-  const end   = addDays(today, 2);
+      const today = new Date();
+      const start = addDays(today, 1);
+      const end = addDays(today, 2);
 
-  const tomorrow = addDays(today, 1);
-  const isTomorrow =
-    start.getFullYear() === tomorrow.getFullYear() &&
-    start.getMonth() === tomorrow.getMonth() &&
-    start.getDate() === tomorrow.getDate();
+      const tomorrow = addDays(today, 1);
+      const isTomorrow =
+        start.getFullYear() === tomorrow.getFullYear() &&
+        start.getMonth() === tomorrow.getMonth() &&
+        start.getDate() === tomorrow.getDate();
 
-  el.textContent = isTomorrow ? "Get It Tomorrow!" : formatRange(start, end);
-})();
+      el.textContent = isTomorrow ? "Get It Tomorrow!" : formatRange(start, end);
+    })();
 
 
-  
+
     // === UTM and Attribution Preservation ===
     function getCheckoutUrl() {
       var base = "https://pawroyale.shop/p/dm-sieeuvg3m1";
@@ -2630,7 +2832,7 @@ document.addEventListener("keydown", (e) => {
     var addToCartBtn = document.getElementById("addToCartBtn");
     if (addToCartBtn) {
       addToCartBtn.href = getCheckoutUrl();
-      addToCartBtn.addEventListener("click", function(e) {
+      addToCartBtn.addEventListener("click", function (e) {
         this.href = getCheckoutUrl();
       });
     }
@@ -2641,4 +2843,6 @@ document.addEventListener("keydown", (e) => {
     }
 
   </script>
-</body></html>
+</body>
+
+</html>

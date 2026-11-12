@@ -203,7 +203,7 @@ const STAGES = {
     headline: 'Your Order Has Been Delivered',
     paragraphs: (id) => [
       `Your Takealot order <strong>${id}</strong> has been successfully delivered!`,
-      `We hope you enjoy your new JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones.`,
+      `We hope you enjoy your new PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5.`,
       `If you have any questions or feedback about your delivery, our support team is always here to assist.`,
     ],
   },
@@ -241,7 +241,7 @@ function renderStageHtml(template, order, stageInfo, pDate, dDate) {
     .replace(/\{\{order_date\}\}/g, orderDateShort)
     .replace(/\{\{delivery_date\}\}/g, deliveryDateShort)
     .replace(/\{\{delivery_date_long\}\}/g, deliveryDateLong)
-    .replace(/\{\{variant\}\}/g, 'Premium Black');
+    .replace(/\{\{variant\}\}/g, 'White / Black');
 
   // Replace header title if needed
   if (stageInfo && stageInfo.headline) {
@@ -292,7 +292,7 @@ function renderStagePlainText(order, stageInfo, pDate, dDate) {
     `- Order Date: ${orderDateShort}`,
     `- Estimated Delivery Date: ${deliveryDateLong}`,
     `- Delivery Method: Courier`,
-    `- Item: 1x JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones - R 799.00`,
+    `- Item: 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 799.00`,
     `- Total Paid: R 799.00`,
     ``,
     `Need help? Visit https://takelaotpromo.vercel.app`,

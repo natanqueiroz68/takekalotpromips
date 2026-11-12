@@ -7,7 +7,7 @@
 //   UPSTASH_REDIS_REST_TOKEN  Upstash REST token
 //   WEBHOOK_SECRET            signing secret from paw-house.shop webhook settings
 //   PRODUCT_IMAGE_DEFAULT     fallback product image URL
-//   PRODUCT_IMAGE_DM_FWYYAOOHEE   image URL for the JBL PartyBox 520 product
+//   PRODUCT_IMAGE_DM_FWYYAOOHEE   image URL for the PlayStation 5 Slim Console product
 //
 // Paw House sends:  X-Paw-House-Signature: <hmac-sha256-hex>
 // Signature is computed by Paw House as:  HMAC-SHA256(rawBody, signingSecret)
@@ -137,7 +137,7 @@ function renderOrderEmail(order) {
     .replace(/\{\{order_date\}\}/g, orderDateShort)
     .replace(/\{\{delivery_date\}\}/g, deliveryDateShort)
     .replace(/\{\{delivery_date_long\}\}/g, deliveryDateLong)
-    .replace(/\{\{variant\}\}/g, 'Premium Black');
+    .replace(/\{\{variant\}\}/g, 'White / Black');
 }
 
 function renderOrderPlainText(order) {
@@ -146,7 +146,7 @@ function renderOrderPlainText(order) {
   const deliveryDateLong = order.delivery_date_long || dates.delivery_date_long;
   const customerName = order.customer_name || 'Customer';
   const orderNumber = order.order_id;
-  const variant = 'Premium Black';
+  const variant = 'White / Black';
   const trackUrl = `https://takelaotpromo.vercel.app/track.html?order=${orderNumber}`;
 
   return [
@@ -169,7 +169,7 @@ function renderOrderPlainText(order) {
     `- Delivery Method: Courier`,
     ``,
     `ITEMS IN THIS ORDER:`,
-    `- 1x JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones - R 799.00`,
+    `- 1x PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5 - R 799.00`,
     ``,
     `PAYMENT SUMMARY:`,
     `- Subtotal: R 799.00`,
@@ -482,7 +482,7 @@ async function handler(req, res) {
   const productName  = item.title || item.name || item.productName || item.product_title
                     || (payload.product && payload.product.name)
                     || payload.productTitle || payload.product_title
-                    || 'JBL PartyBox 520 Portable Battery-Powered Party Speaker - Black With 2 JBL Wireless Microphones';
+                    || 'PlayStation 5 Digital Edition + Dualsense 5 Controller + PS VR2 + GTA 6 + FC27 + Black Myth: Wukong - PS5';
   const productPrice = item.totalPrice != null
                     ? item.totalPrice
                     : (item.price != null ? item.price : (payload.amount != null ? payload.amount : 799));
